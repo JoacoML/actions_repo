@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: white;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+	/* General */
+body{
+	background-color: black;
+}
+
+h1,h2,h3{
+	color: white;
+}
+
+p{
+	line-height: 2rem;
+	font-size: 1.5rem;
+}
+
+.botonera{
+	grid-area: botonera;
+	width: 100%;
+	height: auto;
+	padding-bottom: 0.6rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px black;
+}
+		/* Logo Home */
+	.botonera__logo{
+		width: 15rem;
+		text-decoration: none;
+		margin-top: 1rem;
+		list-style: none;
+		border: solid 2px black;
+	}
+		/* Lista accesos */
+	.botonera__lista{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin-top: 0.5rem;
+	}
+
+		.botonera__lista li a{
+			text-decoration: none;
+			font-size: 1.6rem;
+			margin: 0.5rem;
+		}
+	/*Home*/
+.homeGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"homeContent"
+						"projectsAdd"
+						"newsAdd"
+						"pie";
+}
+	.homeContent{
+		grid-area: homeContent;
+		border: solid 2px black;
+		display: flex;
+		flex-direction: column;
+	}
+		.sectionHome{
+			height: 80vh;
+			background-image: url(../img/header-actions.png);
+			border: solid 2px black;
+		}
+			.sectionHome__title--xxl{
+				margin: 30% auto;
+				text-align: center;
+				font-size: 5rem;
+				background-color: black;
+			}
+		.sectionAboutUs{
+			height: 80vh;
+			background-image: url(../img/aboutus-actions.png);
+			background-position: center;
+			background-size: auto;
+			border: solid 2px white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+		}
+			.sectionAboutUs__title{
+				text-align: center;
+				font-size: 2rem;
+				border: solid 2px white;
+			}
+			.sectionAboutUs__title h2{
+				color: black;
+			}
+	.projectsAdd{
+		background-color: violet;
+		grid-area: projectsAdd;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.projectsAdd h2{
+		font-size: 3rem;
+	}
+	.projectsAdd p{
+		text-align: center;
+	}
+	.buttonAdd{
+		width:30%;
+		padding: 0;
+		height: 30px;
+		background-color: black;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 1.6rem;
+	}
+	.buttonAdd a{
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+	}
+	.newsAdd{
+		background-color: royalblue;
+		grid-area: newsAdd;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.newsAdd h2{
+		font-size: 3rem;
+	}
+	.newsAdd p{
+		text-align: center;
+	}
+	/* Projects */
+.projectsGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"projectsContent"
+						"donateAdd"
+						"newsAdd"
+						"pie";
+} 
+	.projectsContent{
+		grid-area: projectsContent;
+		width: 100vw;
+		height: 80vh;
+		padding-top: 10rem;
+		background-color: black;
+		background-attachment: fixed;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+		.projects__card{
+			width: 85%;
+			height: auto;
+			margin: 1rem 1rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			border: solid 0.3rem white;
+		}
+		.projects__card a{
+			width: 100%;
+			text-decoration: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+			.card__img{
+				width:100%;
+				height: 65%;
+			}
+			.card__title{
+				font-size: 3rem;
+				text-align: center;
+				display: flex;
+				border: solid 2px white;
+			}
+			.card__text{
+				font-size: 1.5rem;
+				display: flex;
+				text-align: center;
+			}
+		.buttonCard{
+			width:30%;
+			height: 2.5rem;
+			background-color: whitesmoke;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+			font-size: 1.6rem;
+			color: black;
+		}
+	.donateAdd{
+		grid-area: donateAdd;
+		background-color: blueviolet;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+		.donateAdd h2{
+			font-size: 3rem;
+		}
+		.donateAdd p{
+			text-align: center;
+		}
+	/*News*/
+.newsGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"newsContent"
+						"newsPodcast"
+						"projectsAdd"
+						"pie";
+}
+	.newsContent{
+		grid-area: newsContent;
+		width: 100%;
+		height: auto;
+		padding-top: 5rem;
+		background-image: url(../img/news-actions.png);
+		background-position: center;
+		background-attachment: fixed;
+		border: solid 2px black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+		.news__title--xl{
+			margin: 6rem auto 2rem auto;
+			padding: 1rem 3rem;
+			font-size: 5rem;
+			background-color: black;
+			border: solid 2px black;
+			text-align: center;
+		}
+		.news__box{
+			width: auto;
+			border: solid 3px white;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+			.box__article{
+				width: 100%;
+				height: auto;
+				margin: 0.2rem 0.3rem;
+				padding: 1rem 1rem;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				background-color: black;
+				border: solid 3px white;
+			}
+			.box__article a{
+				text-decoration: none;
+			}
+				.article__title{
+					font-size: 1.5rem;
+					border: solid 2px white;
+					display: flex;
+					text-align: center;
+				}
+				.article__img{
+					width: 100%;
+					height: 50%;
+				}
+				.article__text{
+					font-size: 1.5rem;
+					color: white;
+					border: solid 2px white;
+				}		
+	.newsPodcast{
+		grid-area: newsPodcast;
+		width: 100%;
+		border: solid 3px black;
+		background-color: #006090;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 40vh;
+	}
+		.newsPodcast iframe{
+			width: 100%;
+		}
+		.podcast__title{
+			font-size: 2rem;
+			border: solid 2px #006090;
+			text-align: center;
+		}
+	/*Donate*/
+.donateGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"donateContent"
+						"projectsAdd"
+						"newsAdd"
+						"pie";
+}
+	.donateContent{
+		grid-area: donateContent;
+		width: 100%;
+		height: auto;
+		border: solid 2px black;
+		display: flex;
+		flex-direction: column;
+		padding-top: 7rem;
+		background-color: black;
+	}
+		.sectionDonation{
+			width: 100%;
+			height: auto;
+			margin-top: 3rem;
+			background-image: url(../img/donate-actions.png);
+			background-position: center;
+			background-size: cover;
+			border: solid 2px black;
+			display: flex;
+			flex-direction: column;
+
+		}
+			.sectionDonation__title--xl{
+				text-align: left;
+				font-size: 4rem;
+				display: flex;
+				color: black;
+			}
+			.sectionDonation__text--xl{
+				font-size: 1.5rem;
+				color: black;
+				display: flex;
+			}
+			.sectionDonation__form{
+				width: 80%;
+				margin: 3rem;
+				background-color: black;
+				border: solid 3px black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			.sectionDonation__form fieldset{
+				height: auto;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+
+			}
+			.sectionDonation__form legend{
+				color: brown;
+				display: flex;
+				margin: 1rem;
+			}
+			.sectionDonation__form label{
+				font-size: 1.5rem;
+				margin: 1rem 4rem 1rem 4rem;
+			}
+			.sectionDonation__form input{
+				margin: 1rem;
+			}	
+		.sectionIdeas{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+			.sectionIdeas__title--xl{
+				font-size: 3rem;
+				color: black;
+			}
+			.sectionIdeas__text--xl{
+				width: 100%;
+				color: black;
+			}
+			.sectionIdeas__form{
+				width: 80%;
+				margin: 3rem;
+				background-color: black;
+				border: solid 3px black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			.sectionIdeas__form fieldset{
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.sectionIdeas__form legend{
+				color: brown;
+			}
+			.sectionIdeas__form label{
+				font-size: 1.5rem;
+			}
+			.sectionIdeas__form input{
+				display: flex;
+				width: 100%;
+			}
+	/*Talk to us*/
+.talkToUsGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"talkToUsContent"
+						"projectsAdd"
+						"newsAdd"
+						"pie";
+}
+	.talkToUsContent{
+		grid-area: talkToUsContent;
+		width: 100%;
+		border: solid 2px black;
+		display: flex;
+		flex-direction: column;
+	}
+		.sectionTalkToUs{
+			width: 100%;
+			height: 100vh;
+			background-color: black;
+			border: solid 2px white;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+			.talkToUs__title--xxl{
+				font-size: 4rem;
+				margin: 11rem 0.3rem 0.3rem 0.3rem;
+			}
+			.talkToUs__title--xl{
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+			}
+		.sectionTalkToUs iframe{
+			width: 80%;
+		}
+
+	/*Footer*/
+.pie{
+	background-color: white;
+	grid-area: pie;
+	border: solid 2px white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+	.pie__title{
+		color: black;
+		font-size: 1.5rem;
+		border: solid 2px white;
+		text-align: center;
+		display: inline-block;
+	}
+	.pie__icon{
+		width: 50%;
+		border: solid 2px white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+		.pie__icon a{
+			text-decoration: none;
+		}
+		.pie__icon img{
+			width: 3rem;
+			margin: 1rem 1rem;
+		}
+
+	/*Tablet Breakpoint*/
+@media (min-width: 768px){
+		/*Home*/
+	.homeGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"homeContent homeContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+		/*Projects*/
+	.projectsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"projectsContent projectsContent"
+							"donateAdd newsAdd"
+							"pie pie";
+	}
+		.projects__card{
+			width: 40%;
+		}
+		/*News*/
+	.newsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"newsContent newsContent"
+							"newsPodcast projectsAdd"
+							"pie pie";
+	}
+		.box__article a{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+			.article__title{
+				width: 75%;
+				border: solid 2px black;
+				align-items: center;
+				margin: 1rem;
+			}
+			.article__img{
+				width: 75%;
+			}
+			.article__text{
+				display: inline;
+				padding: 0.3rem;
+			}
+		/*Donate*/
+	.donateGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"donateContent donateContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+		.sectionDonation__form{
+			width: 50%;
+		}
+		/*Talk to us*/
+	.talkToUsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"talkToUsContent projectsAdd"
+							"talkToUsContent newsAdd"
+							"pie pie";
+	}
+		.projectsAdd{
+			height: auto;
+		}
+		.newsAdd{
+			height: auto;
+		}
+}
+	/*Desktop Breakpoint*/
+@media (min-width: 1024px){
+		/*Home*/
+	.homeGrid{
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"projectsAdd homeContent"
+							"newsAdd homeContent"
+							"pie pie";
+	}
+		.projectsAdd{
+			height: auto;
+		}
+			.buttonAdd{
+				width:50%;
+			}
+		.newsAdd{
+			height: auto;
+		}
+		/*News*/
+	.newsGrid{
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"newsContent newsPodcast"
+							"newsContent projectsAdd"
+							"pie pie";
+	}	
+		.newsPodcast{
+			height: auto;
+		}
+}
