@@ -84,6 +84,8 @@ p{
 		.sectionHome{
 			height: 80vh;
 			background-image: url(../img/header-actions.png);
+			background-position: center;
+			background-size: cover;
 			/*border: solid 2px black;*/
 		}
 			.sectionHome__title--xxl{
