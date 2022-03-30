@@ -1,118 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Actions</title>
-	<!-- favicon -->
-	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="donateGrid">
-	<!-- Botonera -->
-	<nav class="botonera">
-		<!-- Logo home -->
-		<a href="../index.html">
-			<img class="botonera__logo" src="../img/logo-actions.png" alt="Actions logo">
-		</a>
-		<!-- Accesos -->
-		<ul class="botonera__lista">
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="donate.html">Donate</a></li>
-			<li><a href="talk_to_us.html">Talk to us</a></li>
-		</ul>
-	</nav>
-	<!-- Seccion donate-->
-	<main class="donateContent">
-		<section class="sectionDonation">
-			<h1 class="sectionDonation__title--xl">Donate</h1>
-			<p class="sectionDonation__text--xl">Lorem ipsum dolor sit amet conse</p>
-			<form action="donate.php" method="post" enctype="" class="sectionDonation__form">
-				<fieldset>
-					<legend>Coin</legend>
-					<label for="USD">USD</label>
-					<input type="radio" name="coin" id="USD" value="USD">
-					<label for="EUR">EUR</label>
-					<input type="radio" name="coin" id="EUR" value="EUR">
-				</fieldset>	
-				<fieldset>
-					<legend>Amount</legend>
-					<label for="amount">You choose</label>
-					<input type="text" placeholder="type amount" name="amount" id="amount">
-				</fieldset>	
-				<fieldset>
-					<legend>Payment</legend>
-					<label for="credit">Credit card</label>
-					<input type="checkbox" name="credit" id="credit" value="credit">
-					<label for="transfer">Bank transfer</label>
-					<input type="checkbox" name="transfer" id="transfer" value="transfer">
-					<label for="crypto">Crypto</label>
-					<input type="checkbox" name="crypto" id="crypto" value="crypto">
-				</fieldset>
-				<fieldset>
-					<legend>Your details</legend>
-					<label for="name">Name</label>
-					<input type="text" placeholder="type your name" name="name" id="name">
-					<label for="email">Email</label>
-					<input type="email" placeholder="your@mail.com" name="email" id="email">
-					<label for="Region">Region</label>
-					<select name="region" id="region">
-						<option value="asia">Asia</option>
-						<option value="africa">Africa</option>
-						<option value="europe">Europe</option>
-						<option value="north america">North America</option>
-						<option value="south america">South America</option>
-						<option value="oceania">Oceania</option>
-					</select>
-				</fieldset>	
-				<input type="reset" value="Cancel">
-				<input type="submit" value="Send">
-			</form>
-		</sections>
-		<section class="sectionIdeas">
-			<h2 class="sectionIdeas__title--xl">Leave your idea</h2>
-			<p class="sectionIdeas__text--xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-			<!-- mensaje de idea -->
-			<form action="ideas.php" method="post" class="sectionIdeas__form">
-				<fieldset>
-					<legend>from ideas to ACTIONS</legend>
-					<label for="ideas"></label>
-					<textarea name="ideas" id="ideas" cols="100" rows="10"></textarea>
-				</fieldset>
-				<input type="reset" value="Cancel">
-				<input type="submit" value="Send">
-			</form>
-		</sections>
-	</main>
-	<!-- ProjectsAdd -->
-	<div class="projectsAdd">
-		<h2>Projects</h2>
-		<p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
-		<button class="buttonAdd"><a href="projects.html">Learn more</a></button>
-	</div>
-	<!-- NewsAdd -->
-	<div class="newsAdd">
-		<h2>News</h2>
-		<p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
-		<button class="buttonAdd"><a href="news.html">Read</a>
-	</div>
-	<!-- footer -->
-	<footer class="pie">
-		<!-- Titulo footer -->
-		<h3 class="pie__title">Visit our social media</h3>
-		<!-- accesos redes sociales -->
-		<div class="pie__icon">
-			<a href="https://www.instagram.com" target="_blank">
-				<img src="../img/instagram-actions.png" alt=" Instagram Actions" class="pie__icon--s">
-			</a>
-			<a href="https://twitter.com" target="_blank">
-				<img src="../img/twitter-actions.png" alt="Twitter Actions" class="pie__icon--s">
-			</a>
-			<a href="https://discord.com" target="_blank">
-				<img src="../img/discord-actions.png" alt="Discord Actions" class="pie__icon--s">
-			</a>
-		</div>
-	</footer>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Actions</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Actions CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="donateGrids">
+    <!-- Botonera -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light botonera">
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="../index.html"><img class="botonera__logo" src="../img/logo-actions.png" alt="Actions logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="talk_to_us.html">Talk to us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Seccion donate-->
+    <main class="donateContent">
+      <section class="sectionDonation">
+        <h1 class="sectionDonation__title--xl">Donate</h1>
+        <p class="sectionDonation__text--xl">Lorem ipsum dolor sit amet conse</p>
+        <form action="donate.php" method="post" enctype="" class="sectionDonation__form">
+          <fieldset>
+            <legend>Coin</legend>
+            <label for="USD">USD</label>
+            <input type="radio" name="coin" id="USD" value="USD">
+            <label for="EUR">EUR</label>
+            <input type="radio" name="coin" id="EUR" value="EUR">
+          </fieldset> 
+          <fieldset>
+            <legend>Amount</legend>
+            <label for="amount">You choose</label>
+            <input type="text" placeholder="type amount" name="amount" id="amount">
+          </fieldset> 
+          <fieldset>
+            <legend>Payment</legend>
+            <label for="credit">Credit card</label>
+            <input type="checkbox" name="credit" id="credit" value="credit">
+            <label for="transfer">Bank transfer</label>
+            <input type="checkbox" name="transfer" id="transfer" value="transfer">
+            <label for="crypto">Crypto</label>
+            <input type="checkbox" name="crypto" id="crypto" value="crypto">
+          </fieldset>
+          <fieldset>
+            <legend>Your details</legend>
+            <label for="name">Name</label>
+            <input type="text" placeholder="type your name" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" placeholder="your@mail.com" name="email" id="email">
+            <label for="Region">Region</label>
+            <select name="region" id="region">
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="europe">Europe</option>
+              <option value="north america">North America</option>
+              <option value="south america">South America</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </fieldset> 
+          <input type="reset" value="Cancel">
+          <input type="submit" value="Send">
+        </form>
+      </sections>
+      <section class="sectionIdeas">
+        <h2 class="sectionIdeas__title--xl">Leave your idea</h2>
+        <p class="sectionIdeas__text--xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+        <!-- mensaje de idea -->
+        <form action="ideas.php" method="post" class="sectionIdeas__form">
+          <fieldset>
+            <legend>from ideas to ACTIONS</legend>
+            <label for="ideas"></label>
+            <textarea name="ideas" id="ideas" cols="100" rows="10"></textarea>
+          </fieldset>
+          <input type="reset" value="Cancel">
+          <input type="submit" value="Send">
+        </form>
+      </sections>
+    </main>
+    <!-- ProjectsAdd -->
+    <div class="projectsAdd">
+      <h2>Projects</h2>
+      <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
+      <button class="buttonAdd"><a href="projects.html">Learn more</a></button>
+    </div>
+    <!-- NewsAdd -->
+    <div class="newsAdd">
+      <h2>News</h2>
+      <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
+      <button class="buttonAdd"><a href="news.html">Read</a>
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-light pie">
+      <!-- Titulo footer -->
+      <div class="pie__title">
+        <span class="text-muted">Visit our social media.</span>
+      </div>
+      <!-- iconos redes sociales -->
+      <div class="pie__icon justify-content-end">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../img/instagram-actions.png" alt=" Instagram Actions">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="../img/twitter-actions.png" alt="Twitter Actions">
+        </a>
+        <a href="https://discord.com" target="_blank">
+          <img src="../img/discord-actions.png" alt="Discord Actions">
+        </a>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>

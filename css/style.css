@@ -29,39 +29,21 @@ p{
 
 .botonera{
 	grid-area: botonera;
-	width: 100%;
-	height: auto;
-	padding-bottom: 0.6rem;
 	background-color: rgba(0, 0, 0, 0.3);
-	position: fixed;
-	top: 0;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	border: solid 2px black;
 }
-		/* Logo Home */
+	/* Logo Home */
 	.botonera__logo{
 		width: 15rem;
-		text-decoration: none;
-		margin-top: 1rem;
-		list-style: none;
 		border: solid 2px black;
 	}
-		/* Lista accesos */
+	/* Lista accesos */
 	.botonera__lista{
-		display: flex;
-		flex-wrap: wrap;
-		list-style: none;
-		margin-top: 0.5rem;
+		margin: 0.5rem;
+		padding: 1rem;
 	}
 
 		.botonera__lista li a{
-			text-decoration: none;
 			font-size: 1.6rem;
-			margin: 0.5rem;
 		}
 	/*Home*/
 .homeGrid{
@@ -512,37 +494,21 @@ p{
 
 	/*Footer*/
 .pie{
-	background-color: white;
 	grid-area: pie;
-	border: solid 2px white;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 	.pie__title{
-		color: black;
 		font-size: 1.5rem;
-		border: solid 2px white;
-		text-align: center;
-		display: inline-block;
 	}
-	.pie__icon{
-		width: 50%;
-		border: solid 2px white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
+	.pie__icon img{
+		width: 3rem;
+		margin: 0.5rem 0.5rem;
 	}
-		.pie__icon a{
-			text-decoration: none;
-		}
-		.pie__icon img{
-			width: 3rem;
-			margin: 1rem 1rem;
-		}
-
+	.pie__icon a{
+		text-decoration: none;
+	}
 	/*Tablet Breakpoint*/
 @media (min-width: 768px){
 		/*Home*/
