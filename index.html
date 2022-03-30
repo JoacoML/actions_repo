@@ -1,73 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Actions</title>
-	<!-- favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="homeGrid">
-	<!-- Botonera -->
-	<nav class="botonera">
-		<!-- Logo Home -->
-		<a href="index.html"><img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo">
-		</a>
-		<!-- Accesos -->
-		<ul class="botonera__lista">
-			<li><a href="#aboutUs">About us</a></li>
-			<li><a href="views/projects.html">Projects</a></li>
-			<li><a href="views/news.html">News</a></li>
-			<li><a href="views/donate.html">Donate</a></li>
-			<li><a href="views/talk_to_us.html">Talk to us</a></li>
-		</ul>
-	</nav>
-	<!-- Home -->
-	<main class="homeContent">
-		<section class="sectionHome">
-			<h1 class="sectionHome__title--xxl">It's time for <span>ACTIONS</span></h1>
-		</section>
-			<!-- seccion about us -->
-		<section class="sectionAboutUs" id="aboutUs">
-				<!-- we are -->
-			<div class="sectionAboutUs__title">
-				<h2>We are  ipsum dolor sit, amet consectetur adipisicing elit. Ratione necessitatibus errors</h2>
-			</div>
-				<!-- we want -->
-			<div class="sectionAboutUs__title">
-				<h2>We want to itatibus error, vitae est. Laboriosam, minus commodi provident </h2>
-			</div>
-		</section>
-	</main>
-	<!-- ProjectsAdd -->
-	<div class="projectsAdd">
-		<h2>Projects</h2>
-		<p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
-		<button class="buttonAdd"><a href="views/projects.html">Learn more</a></button>
-	</div>
-	<!-- NewsAdd -->
-	<div class="newsAdd">
-		<h2>News</h2>
-		<p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
-		<button class="buttonAdd"><a href="views/news.html">Read</a>
-	</div>
-	<!-- footer -->
-	<footer class="pie">
-		<!-- Titulo footer -->
-		<h3 class="pie__title">Visit our social media</h3>
-		<!-- iconos redes sociales -->
-		<div class="pie__icon">
-			<a href="https://www.instagram.com" target="_blank">
-				<img src="img/instagram-actions.png" alt=" Instagram Actions">
-			</a>
-			<a href="https://twitter.com" target="_blank">
-				<img src="img/twitter-actions.png" alt="Twitter Actions">
-			</a>
-			<a href="https://discord.com" target="_blank">
-				<img src="img/discord-actions.png" alt="Discord Actions">
-			</a>
-		</div>
-	</footer>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Actions</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Actions CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="homeGrid">
+    <!-- Botonera -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light botonera">
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="index.html"><img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutUs">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <main class="homeContent">
+      <section class="sectionHome">
+        <h1 class="sectionHome__title--xxl">It's time for <span>ACTIONS</span></h1>
+      </section>
+        <!-- seccion about us -->
+      <section class="sectionAboutUs" id="aboutUs">
+          <!-- we are -->
+        <div class="sectionAboutUs__title">
+          <h2>We are  ipsum dolor sit, amet consectetur adipisicing elit. Ratione necessitatibus errors</h2>
+        </div>
+          <!-- we want -->
+        <div class="sectionAboutUs__title">
+          <h2>We want to itatibus error, vitae est. Laboriosam, minus commodi provident </h2>
+        </div>
+      </section>
+    </main>
+    <!-- ProjectsAdd -->
+    <div class="projectsAdd">
+      <h2>Projects</h2>
+      <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
+      <button class="buttonAdd"><a href="views/projects.html">Learn more</a></button>
+    </div>
+    <!-- NewsAdd -->
+    <div class="newsAdd">
+      <h2>News</h2>
+      <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
+      <button class="buttonAdd"><a href="views/news.html">Read</a>
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-light pie">
+      <!-- Titulo footer -->
+      <div class="pie__title">
+        <span class="text-muted">Visit our social media.</span>
+      </div>
+      <!-- iconos redes sociales -->
+      <div class="pie__icon justify-content-end">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="img/instagram-actions.png" alt=" Instagram Actions">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="img/twitter-actions.png" alt="Twitter Actions">
+        </a>
+        <a href="https://discord.com" target="_blank">
+          <img src="img/discord-actions.png" alt="Discord Actions">
+        </a>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
