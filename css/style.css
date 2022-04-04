@@ -29,7 +29,7 @@ p{
 
 .botonera{
 	grid-area: botonera;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(123, 159, 204, 1);
 }
 	/* Logo Home */
 	.botonera__logo{
@@ -83,6 +83,7 @@ p{
 				to{opacity: 1;}
 			}
 			.sectionHome__title--xxl span{
+				text-transform: uppercase;
 				animation-name: beat;
 				animation-iteration-count: infinite;
 				animation-duration: 2s;
@@ -354,64 +355,58 @@ p{
 		grid-area: donateContent;
 		width: 100%;
 		height: auto;
-		border: solid 2px black;
 		display: flex;
 		flex-direction: column;
-		padding-top: 7rem;
+		padding-top: 8rem;
 		background-color: black;
 	}
 		.sectionDonation{
 			width: 100%;
 			height: auto;
-			margin-top: 3rem;
 			background-image: url(../img/donate-actions.png);
 			background-position: center;
 			background-size: cover;
-			border: solid 2px black;
 			display: flex;
 			flex-direction: column;
 
 		}
 			.sectionDonation__title--xl{
-				text-align: left;
+				text-align: center;
 				font-size: 4rem;
 				display: flex;
+				justify-content: center;
 				color: black;
 			}
 			.sectionDonation__text--xl{
 				font-size: 1.5rem;
 				color: black;
 				display: flex;
+				justify-content: center;
 			}
 			.sectionDonation__form{
 				width: 80%;
 				margin: 3rem;
-				background-color: black;
 				border: solid 3px black;
 				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
+				background-color: black;
+				flex-direction: row;
+				justify-content: center;
 			}
 			.sectionDonation__form fieldset{
 				height: auto;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				align-items: center;
-
+				align-items: flex-start;
 			}
 			.sectionDonation__form legend{
 				color: brown;
 				display: flex;
-				margin: 1rem;
+				margin-left: 2rem;
 			}
 			.sectionDonation__form label{
 				font-size: 1.5rem;
-				margin: 1rem 4rem 1rem 4rem;
 			}
 			.sectionDonation__form input{
-				margin: 1rem;
-			}	
+				display: flex;
+			}
 		.sectionIdeas{
 			width: 100%;
 			height: auto;
@@ -447,10 +442,6 @@ p{
 			.sectionIdeas__form label{
 				font-size: 1.5rem;
 			}
-			.sectionIdeas__form input{
-				display: flex;
-				width: 100%;
-			}
 	/*Talk to us*/
 .talkToUsGrid{
 	width: 100vw;
@@ -466,7 +457,6 @@ p{
 	.talkToUsContent{
 		grid-area: talkToUsContent;
 		width: 100%;
-		border: solid 2px black;
 		display: flex;
 		flex-direction: column;
 	}
@@ -474,7 +464,6 @@ p{
 			width: 100%;
 			height: 100vh;
 			background-color: black;
-			border: solid 2px white;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -582,9 +571,13 @@ p{
 	}
 		.projectsAdd{
 			height: auto;
+			padding-top: 3rem;
+			padding-bottom: 1rem;
 		}
 		.newsAdd{
 			height: auto;
+			padding-top: 3rem;
+			padding-bottom: 1rem;
 		}
 }
 	/*Desktop Breakpoint*/
