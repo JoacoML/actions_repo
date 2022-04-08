@@ -1,0 +1,17 @@
+	/*Footer*/
+.pie{
+	grid-area: pie;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+	.pie__title{
+		font-size: 1.5rem;
+	}
+	.pie__icon img{
+		width: 3rem;
+		margin: 0.5rem 0.5rem;
+	}
+	.pie__icon a{
+		text-decoration: none;
+	}

@@ -1,0 +1,103 @@
+	/*Donate*/
+.donateGrid{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:"botonera"
+						"donateContent"
+						"projectsAdd"
+						"newsAdd"
+						"pie";
+}
+	.donateContent{
+		grid-area: donateContent;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		padding-top: 8rem;
+		background-color: black;
+	}
+		.sectionDonation{
+			width: 100%;
+			height: auto;
+			background-image: url(../img/donate-actions.png);
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+
+		}
+			.sectionDonation__title--xl{
+				text-align: center;
+				font-size: 4rem;
+				display: flex;
+				justify-content: center;
+				color: black;
+			}
+			.sectionDonation__text--xl{
+				font-size: 1.5rem;
+				color: black;
+				display: flex;
+				justify-content: center;
+			}
+			.sectionDonation__form{
+				width: 80%;
+				margin: 3rem;
+				border: solid 3px black;
+				display: flex;
+				background-color: black;
+				flex-direction: row;
+				justify-content: center;
+			}
+			.sectionDonation__form fieldset{
+				height: auto;
+				align-items: flex-start;
+			}
+			.sectionDonation__form legend{
+				color: brown;
+				display: flex;
+				margin-left: 2rem;
+			}
+			.sectionDonation__form label{
+				font-size: 1.5rem;
+			}
+			.sectionDonation__form input{
+				display: flex;
+			}
+		.sectionIdeas{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+			.sectionIdeas__title--xl{
+				font-size: 3rem;
+				color: black;
+			}
+			.sectionIdeas__text--xl{
+				width: 100%;
+				color: black;
+			}
+			.sectionIdeas__form{
+				width: 80%;
+				margin: 3rem;
+				background-color: black;
+				border: solid 3px black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			.sectionIdeas__form fieldset{
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.sectionIdeas__form legend{
+				color: brown;
+			}
+			.sectionIdeas__form label{
+				font-size: 1.5rem;
+			}

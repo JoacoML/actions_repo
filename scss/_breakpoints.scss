@@ -1,0 +1,121 @@
+	/*Tablet Breakpoint*/
+@media (min-width: 768px){
+		/*Home*/
+	.homeGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"homeContent homeContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+		/*Projects*/
+	.projectsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"projectsContent projectsContent"
+							"donateAdd newsAdd"
+							"pie pie";
+	}
+		.projects__card{
+			width: 40%;
+		}
+		/*News*/
+	.newsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"newsContent newsContent"
+							"newsPodcast projectsAdd"
+							"pie pie";
+	}
+		.box__article a{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+			.article__title{
+				width: 75%;
+				border: solid 2px black;
+				align-items: center;
+				margin: 1rem;
+			}
+			.article__img{
+				width: 75%;
+			}
+			.article__text{
+				display: inline;
+				padding: 0.3rem;
+			}
+		/*Donate*/
+	.donateGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"donateContent donateContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+		.sectionDonation__form{
+			width: 50%;
+		}
+		/*Talk to us*/
+	.talkToUsGrid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"talkToUsContent projectsAdd"
+							"talkToUsContent newsAdd"
+							"pie pie";
+	}
+		.projectsAdd{
+			height: auto;
+			padding-top: 3rem;
+			padding-bottom: 1rem;
+		}
+		.newsAdd{
+			height: auto;
+			padding-top: 3rem;
+			padding-bottom: 1rem;
+		}
+}
+	/*Desktop Breakpoint*/
+@media (min-width: 1024px){
+		/*Home*/
+	.homeGrid{
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"projectsAdd homeContent"
+							"newsAdd homeContent"
+							"pie pie";
+	}
+		.projectsAdd{
+			height: auto;
+		}
+			.buttonAdd{
+				width:50%;
+			}
+		.newsAdd{
+			height: auto;
+		}
+		.sectionHome{
+			height: 100vh;
+		}
+		.sectionAboutUs{
+			height: 100vh;
+		}
+		/*News*/
+	.newsGrid{
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"newsContent newsPodcast"
+							"newsContent projectsAdd"
+							"pie pie";
+	}	
+		.newsPodcast{
+			height: auto;
+		}
+}

@@ -1,0 +1,18 @@
+// Botonera 
+.botonera{
+	grid-area: botonera;
+	background-color: rgba(123, 159, 204, 1);
+	/* Logo Home */
+	.botonera__logo{
+		width: 15rem;
+		border: solid 2px black;
+	}
+	/* Lista accesos */
+	.botonera__lista{
+		margin: 0.5rem;
+		padding: 1rem;
+		a{
+			font-size: $textS;
+		}
+	}
+}
