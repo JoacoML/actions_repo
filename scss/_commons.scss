@@ -4,7 +4,6 @@
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-	color: white;
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
@@ -20,8 +19,52 @@ p{
 // Variables
 
 $backColor: black;
-$textMainColor: white;
-$textSecondaryColor: black;
-$textL: 5rem;
+
+// Variables para texto
+
+$lightColor: white;
+$darkColor: black;
+$textXL: 5rem;
 $textM: 3rem;
 $textS: 1.5rem;
+
+// Mixin
+
+@mixin flexContent($direction,$justify,$align){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+} 
+	// @include flexContent(row, space-around, center);
+
+@mixin text($size, $line-height, $align, $color){
+	font-size: $size;
+	line-height: $line-height;
+	text-align: $align;
+	color: $color;
+}
+	//@include text($textXL, 5rem, center, $darkColor);
+
+
+// Map de colores
+
+$paleta:(
+	'dark':#020301,
+	'darkblue':#1E5096,
+	'blue':#469CE3,
+	'lightblue':#5AC7FA,
+	'superlight':#E3FEFF,
+	'white':#FFFEFF,
+);
+	// map-get($map:$paleta,$key:'white');
+
+// Extend clases madre
+.button{
+	padding: 0.3rem;
+	border-radius: 5px;
+	background-color: map-get($map:$paleta,$key:'superlight');
+	text-align: center;
+	font-size: $textS;
+	color: black;
+}

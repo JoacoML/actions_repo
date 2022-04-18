@@ -9,95 +9,98 @@
 						"projectsAdd"
 						"newsAdd"
 						"pie";
-}
 	.donateContent{
 		grid-area: donateContent;
 		width: 100%;
 		height: auto;
-		display: flex;
-		flex-direction: column;
 		padding-top: 8rem;
-		background-color: black;
-	}
+		background-color: map-get($map:$paleta,$key:'lightblue');
+		@include flexContent(column, center, center);
 		.sectionDonation{
 			width: 100%;
 			height: auto;
-			background-image: url(../img/donate-actions.png);
-			background-position: center;
-			background-size: cover;
-			display: flex;
-			flex-direction: column;
-
-		}
+			// background-image: url(../img/donate-actions.png);
+			// background-position: center;
+			// background-size: cover;
+			@include flexContent(column, center, center);
 			.sectionDonation__title--xl{
-				text-align: center;
-				font-size: 4rem;
-				display: flex;
-				justify-content: center;
-				color: black;
+				@include text($textXL, auto, center, $darkColor);
+				overflow-x: clip;
 			}
 			.sectionDonation__text--xl{
-				font-size: 1.5rem;
-				color: black;
-				display: flex;
-				justify-content: center;
+				@include text($textS, auto, center, $darkColor);
 			}
 			.sectionDonation__form{
 				width: 80%;
 				margin: 3rem;
-				border: solid 3px black;
-				display: flex;
-				background-color: black;
-				flex-direction: row;
-				justify-content: center;
+				padding: 1rem;
+				border: solid 3px white;
+				background-color: map-get($map:$paleta,$key:'darkblue');
+				@include flexContent(row, center, all);
+				@include text($textS, auto, left, $lightColor);
+				fieldset{
+					font-size: 1.7rem;
+					legend{
+						color: brown;
+						margin-left: 2rem;
+					}
+					label{
+						padding: 2px;
+					}
+				}
+				.buttonForm{
+					@extend .button;
+					margin: 2px;
+					background-color: white;
+					color: black;
+				}
+				@media (min-width: 768px){
+					width: 50%;
+				}
 			}
-			.sectionDonation__form fieldset{
-				height: auto;
-				align-items: flex-start;
-			}
-			.sectionDonation__form legend{
-				color: brown;
-				display: flex;
-				margin-left: 2rem;
-			}
-			.sectionDonation__form label{
-				font-size: 1.5rem;
-			}
-			.sectionDonation__form input{
-				display: flex;
-			}
+		}
 		.sectionIdeas{
 			width: 100%;
 			height: auto;
-			display: flex;
-			flex-direction: column;
-		}
+			@include flexContent(column, center, center);
 			.sectionIdeas__title--xl{
-				font-size: 3rem;
-				color: black;
+				@include text($textXL, auto, center, $darkColor);
 			}
 			.sectionIdeas__text--xl{
-				width: 100%;
-				color: black;
+				@include flexContent(column, center, center);
+				@include text($textS, auto, center, $darkColor);
 			}
 			.sectionIdeas__form{
 				width: 80%;
 				margin: 3rem;
-				background-color: black;
-				border: solid 3px black;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
+				padding: 1rem;
+				background-color: map-get($map:$paleta,$key:'darkblue');
+				border: solid 3px white;
+				@include flexContent(column, space-around, all);
+				legend{
+					color: brown;
+				}
+				label{
+					@include text($textS, auto, left, $lightColor);
+				}
+				.buttonForm{
+					@extend .button;
+					margin: 2px;
+					background-color: white;
+					color: black;
+				}
+				@media (min-width: 768px){
+					width: 50%;
+				}
 			}
-			.sectionIdeas__form fieldset{
-				height: auto;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-			.sectionIdeas__form legend{
-				color: brown;
-			}
-			.sectionIdeas__form label{
-				font-size: 1.5rem;
-			}
+		}
+	}
+	@media (min-width: 768px){
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"donateContent donateContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+}

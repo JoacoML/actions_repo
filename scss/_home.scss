@@ -11,19 +11,16 @@
 						"pie";
 	.homeContent{
 		grid-area: homeContent;
-		display: flex;
-		flex-direction: column;
-	
+		@include flexContent(column, center, all);
 		.sectionHome{
 			height: 80vh;
 			background-image: url(../img/header-actions.png);
 			background-position: center;
 			background-size: cover;
-			.sectionHome__title--xxl{
+			overflow-x: clip;
+			.sectionHome__title--xl{
 				margin: 30% auto;
-				text-align: center;
-				font-size: $textL;
-				color: $textSecondaryColor;
+				@include text($textXL, auto, center, $darkColor);
 				animation-name: textAlpha;
 				animation-duration: 2s;
 				@keyframes textAlpha{
@@ -32,18 +29,17 @@
 				}
 				span{
 					text-transform: uppercase;
-					color: $textMainColor;
+					color: $lightColor;
 					animation-name: beat;
 					animation-iteration-count: infinite;
 					animation-duration: 2s;
-						@keyframes beat{
-							2%{font-size: 6rem;}
-							6%{font-size: 5rem;}
-							8%{font-size: 6rem;}
-							12%{font-size: 5rem;}
-						}
+					@keyframes beat{
+						2%{font-size: 6rem;}
+						6%{font-size: 5rem;}
+						8%{font-size: 6rem;}
+						12%{font-size: 5rem;}
 					}
-				} 
+				}
 			}
 		}
 		.sectionAboutUs{
@@ -51,79 +47,60 @@
 			background-image: url(../img/aboutus-actions.png);
 			background-position: center;
 			background-size: auto;
-			border: solid 2px white;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-around;
+			@include flexContent(column, space-around, center);
 			.sectionAboutUs__title{
-				text-align: center;
-				font-size: 2rem;
-				h2{
-					color: $textSecondaryColor;
-				}
+				@include text($textM, auto, center, $darkColor);
 			}
 		}
 	}
-	.projectsAdd{
-		background: rgb(0,0,0);
-		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-		grid-area: projectsAdd;
-		height: 30vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		h2{
-			font-size: $textM;
-		}
-		p{
-			text-align: center;
-			font-size: $textS;
-		}
-		button{
-			width:30%;
-			padding: 0;
-			height: 30px;
-			background-color: $backColor;
-			text-align: center;
-			border-radius: 5px;
-			font-size: $textS;
-			a{
-				width: 100%;
-				height: 100%;
-				text-decoration: none;
-			}
+	@media (min-width: 768px){
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:"botonera botonera"
+							"homeContent homeContent"
+							"projectsAdd newsAdd"
+							"pie pie";
+	}
+}
+.projectsAdd{
+	grid-area: projectsAdd;
+	height: 30vh;
+	background-color: map-get($map:$paleta,$key:'darkblue');
+	@include flexContent(column, space-evenly, center);
+	h2{
+		@include text($textM, auto, center, $darkColor);
+	}
+	p{
+		@include text($textS, auto, center, $lightColor);
+	}
+	a{
+		width: 100%;
+		text-decoration: none;
+		@include flexContent(column, space-evenly, center);
+		.buttonAdd{
+			@extend .button;
+			margin: 2px;
 		}
 	}
-	.newsAdd{
-		background: rgb(0,0,0);
-		background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-		grid-area: newsAdd;
-		height: 30vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		h2{
-			font-size: $textM;
-		}
-		p{
-			text-align: center;
-			font-size: $textS;
-		}
-		button{
-			width:30%;
-			padding: 0;
-			height: 30px;
-			background-color: $backColor;
-			text-align: center;
-			border-radius: 5px;
-			font-size: $textS;
-			a{
-				width: 100%;
-				height: 100%;
-				text-decoration: none;
-			}
+}
+.newsAdd{
+	grid-area: newsAdd;
+	height: 30vh;
+	background-color: map-get($map:$paleta,$key:'blue');
+	@include flexContent(column, space-evenly, center);
+	h2{
+		@include text($textM, auto, center, $darkColor);
+	}
+	p{
+		@include text($textS, auto, center, $lightColor);
+	}
+	a{
+		width: 100%;
+		text-decoration: none;
+		@include flexContent(column, space-evenly, center);
+		.buttonAdd{
+			@extend .button;
+			margin: 2px;
 		}
 	}
+}
