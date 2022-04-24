@@ -12,12 +12,14 @@ html {
 p {
   line-height: 2rem; }
 
-.button, .projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card a .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm {
+.projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card .card .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm {
   padding: 0.3rem;
+  border-color: #FFFEFF;
   border-radius: 5px;
   background-color: #E3FEFF;
   text-align: center;
   font-size: 1.5rem;
+  text-decoration: none;
   color: black; }
 
 .botonera {
@@ -26,7 +28,7 @@ p {
   /* Logo Home */
   /* Lista accesos */ }
   .botonera .botonera__logo {
-    width: 15rem;
+    width: 18rem;
     border: solid 2px whitesmoke; }
   .botonera .botonera__lista {
     margin: 0.5rem;
@@ -45,21 +47,25 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: all; }
+    align-items: all;
+    margin-top: 12vh; }
     .homeGrid .homeContent .sectionHome {
       height: 80vh;
       background-image: url(../img/header-actions.png);
       background-position: center;
       background-size: cover;
-      overflow-x: clip; }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: all; }
       .homeGrid .homeContent .sectionHome .sectionHome__title--xl {
-        margin: 30% auto;
+        margin-top: 10vh;
         font-size: 5rem;
         line-height: auto;
         text-align: center;
         color: black;
         animation-name: textAlpha;
-        animation-duration: 2s; }
+        animation-duration: 3s; }
 
 @keyframes textAlpha {
   from {
@@ -167,51 +173,70 @@ p {
   grid-template-areas: "botonera" "projectsContent" "donateAdd" "newsAdd" "pie"; }
   .projectsGrid .projectsContent {
     grid-area: projectsContent;
-    width: 100vw;
-    height: 80vh;
     padding-top: 10rem;
     background-color: #5AC7FA;
     background-attachment: fixed;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .projectsGrid .projectsContent .projects__title--xl {
+      margin: 2rem auto;
+      padding: 1rem 3rem;
+      animation-name: textAlpha;
+      animation-duration: 2s;
+      font-size: 5rem;
+      line-height: auto;
+      text-align: center;
+      color: white; }
     .projectsGrid .projectsContent .projects__card {
-      width: 85%;
-      height: auto;
-      margin: 1rem 1rem;
-      border: solid 0.3rem white;
-      background-color: #1E5096; }
-      .projectsGrid .projectsContent .projects__card a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .projectsGrid .projectsContent .projects__card .card {
+        border: solid 0.3rem white;
+        box-shadow: 0 0 30px 0 #5a5858;
+        transition: all 0.7s;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 100%;
-        text-decoration: none; }
-        .projectsGrid .projectsContent .projects__card a .card__img {
-          width: 100%;
-          height: 65%; }
-        .projectsGrid .projectsContent .projects__card a .card__title {
+        background-color: #1E5096; }
+        .projectsGrid .projectsContent .projects__card .card img {
+          transition: all 0.7s; }
+          .projectsGrid .projectsContent .projects__card .card img:hover {
+            transform: scale(0.95); }
+        .projectsGrid .projectsContent .projects__card .card .card__title {
           font-size: 3rem;
           line-height: auto;
           text-align: center;
           color: white; }
-        .projectsGrid .projectsContent .projects__card a .card__text {
+        .projectsGrid .projectsContent .projects__card .card .card__text {
           font-size: 1.5rem;
           line-height: auto;
           text-align: center;
           color: white; }
-        .projectsGrid .projectsContent .projects__card a .buttonCard {
+        .projectsGrid .projectsContent .projects__card .card .buttonCard {
           background-color: whitesmoke;
           color: black;
-          margin: 3px; }
-      .projectsGrid .projectsContent .projects__card:hover {
-        transform: scale(1.05); }
+          margin: 0.7rem;
+          transition: all 0.7s; }
+          .projectsGrid .projectsContent .projects__card .card .buttonCard:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
+        .projectsGrid .projectsContent .projects__card .card:hover {
+          transform: scale(1.05);
+          background-color: #020301; }
       @media (min-width: 768px) {
         .projectsGrid .projectsContent .projects__card {
-          width: 40%; } }
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap; } }
   .projectsGrid .donateAdd {
     background-color: #1E5096;
     grid-area: donateAdd;
@@ -256,7 +281,7 @@ p {
     grid-area: newsContent;
     width: 100%;
     height: auto;
-    padding-top: 5rem;
+    padding-top: 10rem;
     background-color: #5AC7FA;
     background-position: center;
     background-attachment: fixed;
@@ -265,7 +290,7 @@ p {
     justify-content: center;
     align-items: center; }
     .newsGrid .newsContent .news__title--xl {
-      margin: 6rem auto 2rem auto;
+      margin: 2rem auto;
       padding: 1rem 3rem;
       animation-name: textAlpha;
       animation-duration: 2s;

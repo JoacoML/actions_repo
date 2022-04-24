@@ -13,14 +13,14 @@
 		grid-area: newsContent;
 		width: 100%;
 		height: auto;
-		padding-top: 5rem;
+		padding-top: 10rem;
 		background-color: map-get($map:$paleta,$key:'lightblue');
 		// background-image: url(../img/news-actions.png);
 		background-position: center;
 		background-attachment: fixed;
 		@include flexContent(column, center, center);
 		.news__title--xl{
-			margin: 6rem auto 2rem auto;
+			margin: 2rem auto;
 			padding: 1rem 3rem;
 			animation-name: textAlpha;
 			animation-duration: 2s;

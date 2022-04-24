@@ -49,7 +49,7 @@
 					}
 				}
 				.buttonForm{
-					@extend .button;
+					@extend %button;
 					margin: 2px;
 					background-color: white;
 					color: black;
@@ -84,7 +84,7 @@
 					@include text($textS, auto, left, $lightColor);
 				}
 				.buttonForm{
-					@extend .button;
+					@extend %button;
 					margin: 2px;
 					background-color: white;
 					color: black;

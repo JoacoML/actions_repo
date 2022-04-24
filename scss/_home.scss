@@ -12,17 +12,18 @@
 	.homeContent{
 		grid-area: homeContent;
 		@include flexContent(column, center, all);
+		margin-top: 12vh;
 		.sectionHome{
 			height: 80vh;
 			background-image: url(../img/header-actions.png);
 			background-position: center;
 			background-size: cover;
-			overflow-x: clip;
+			@include flexContent(row, center, all);
 			.sectionHome__title--xl{
-				margin: 30% auto;
+				margin-top: 10vh;
 				@include text($textXL, auto, center, $darkColor);
 				animation-name: textAlpha;
-				animation-duration: 2s;
+				animation-duration: 3s;
 				@keyframes textAlpha{
 					from{opacity: 0}
 					to{opacity: 1;}
@@ -78,7 +79,7 @@
 		text-decoration: none;
 		@include flexContent(column, space-evenly, center);
 		.buttonAdd{
-			@extend .button;
+			@extend %button;
 			margin: 2px;
 		}
 	}
@@ -99,7 +100,7 @@
 		text-decoration: none;
 		@include flexContent(column, space-evenly, center);
 		.buttonAdd{
-			@extend .button;
+			@extend %button;
 			margin: 2px;
 		}
 	}

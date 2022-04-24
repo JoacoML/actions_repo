@@ -59,12 +59,14 @@ $paleta:(
 );
 	// map-get($map:$paleta,$key:'white');
 
-// Extend clases madre
-.button{
+// Extend placeholder madre
+%button{
 	padding: 0.3rem;
+	border-color: #FFFEFF;
 	border-radius: 5px;
 	background-color: map-get($map:$paleta,$key:'superlight');
 	text-align: center;
 	font-size: $textS;
+	text-decoration: none;
 	color: black;
 }
