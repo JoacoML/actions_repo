@@ -89,19 +89,79 @@ p {
   12% {
     font-size: 5rem; } }
     .homeGrid .homeContent .sectionAboutUs {
-      height: 80vh;
-      background-image: url(../img/aboutus-actions.png);
-      background-position: center;
-      background-size: auto;
+      padding-top: 5rem;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center; }
-      .homeGrid .homeContent .sectionAboutUs .sectionAboutUs__title {
-        font-size: 3rem;
-        line-height: auto;
-        text-align: center;
-        color: black; }
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap; }
+      .homeGrid .homeContent .sectionAboutUs .aboutUs {
+        border: solid 2px black;
+        width: 100%; }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs .aboutUs__title {
+          font-size: 3rem;
+          line-height: auto;
+          text-align: left;
+          color: black;
+          border-bottom: 2px solid black;
+          margin: 1rem; }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs .aboutUs__text {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          text-align: left;
+          color: black;
+          margin: 1rem; }
+        @media (min-width: 575px) {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(1) {
+            width: 55%; } }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) {
+          background-color: #5AC7FA; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) .aboutUs__title {
+            font-size: 3rem;
+            line-height: auto;
+            text-align: center;
+            color: black; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) .aboutUs__text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: center;
+            color: black; }
+          @media (min-width: 575px) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) {
+              width: 45%; } }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) {
+          background-color: #5AC7FA; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) .aboutUs__title {
+            font-size: 3rem;
+            line-height: auto;
+            text-align: right;
+            color: black; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) .aboutUs__text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: right;
+            color: black; }
+          @media (min-width: 575px) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) {
+              width: 50%; } }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) {
+          background-color: #5AC7FA; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) .aboutUs__title {
+            font-size: 3rem;
+            line-height: auto;
+            text-align: right;
+            color: black; }
+          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) .aboutUs__text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: right;
+            color: black; }
+          @media (min-width: 575px) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) {
+              width: 50%; } }
+        @media (min-width: 575px) {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs {
+            height: 30vh; } }
   @media (min-width: 768px) {
     .homeGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -346,7 +406,7 @@ p {
             text-align: left;
             color: white; }
         .newsGrid .newsContent .news__box .articleNews:hover {
-          transform: scale(1.03); }
+          transform: scale(1.02); }
   .newsGrid .newsPodcast {
     grid-area: newsPodcast;
     width: 100%;
@@ -382,32 +442,46 @@ p {
   grid-template-areas: "botonera" "donateContent" "projectsAdd" "newsAdd" "pie"; }
   .donateGrid .donateContent {
     grid-area: donateContent;
-    width: 100%;
-    height: auto;
-    padding-top: 8rem;
+    padding-top: 12rem;
     background-color: #5AC7FA;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .donateGrid .donateContent .sectionDonation__title--xl {
+      padding: 1rem 3rem;
+      animation-name: textAlpha;
+      animation-duration: 2s;
+      font-size: 5rem;
+      line-height: auto;
+      text-align: center;
+      color: white; }
     .donateGrid .donateContent .sectionDonation {
-      width: 100%;
-      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .donateGrid .donateContent .sectionDonation .sectionDonation__title--xl {
-        font-size: 5rem;
-        line-height: auto;
-        text-align: center;
-        color: black;
-        overflow-x: clip; }
-      .donateGrid .donateContent .sectionDonation .sectionDonation__text--xl {
+      .donateGrid .donateContent .sectionDonation .card {
+        margin: 1rem;
+        background-color: #E3FEFF;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
         font-size: 1.5rem;
         line-height: auto;
         text-align: center;
         color: black; }
+        .donateGrid .donateContent .sectionDonation .card .card__title {
+          font-size: 3rem;
+          line-height: auto;
+          text-align: start;
+          color: black;
+          margin: 1rem, 1rem; }
+        .donateGrid .donateContent .sectionDonation .card .card__text {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: start;
+          color: black;
+          margin: 0.7rem; }
       .donateGrid .donateContent .sectionDonation .sectionDonation__form {
         width: 80%;
         margin: 3rem;
