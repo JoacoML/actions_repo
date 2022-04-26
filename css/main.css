@@ -448,11 +448,16 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .donateGrid .donateContent .sectionDonation__title--xl {
+    .donateGrid .donateContent .donate__title--xl {
       padding: 1rem 3rem;
       animation-name: textAlpha;
       animation-duration: 2s;
       font-size: 5rem;
+      line-height: auto;
+      text-align: center;
+      color: white; }
+    .donateGrid .donateContent .donate__text--xl {
+      font-size: 1.7rem;
       line-height: auto;
       text-align: center;
       color: white; }
@@ -461,27 +466,33 @@ p {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .donateGrid .donateContent .sectionDonation .card {
+      .donateGrid .donateContent .sectionDonation .cardDonate {
         margin: 1rem;
         background-color: #E3FEFF;
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         font-size: 1.5rem;
         line-height: auto;
         text-align: center;
         color: black; }
-        .donateGrid .donateContent .sectionDonation .card .card__title {
-          font-size: 3rem;
+        .donateGrid .donateContent .sectionDonation .cardDonate .card__title {
+          font-size: 2rem;
           line-height: auto;
           text-align: start;
-          color: black;
-          margin: 1rem, 1rem; }
-        .donateGrid .donateContent .sectionDonation .card .card__text {
+          color: #469CE3;
+          margin: 0.5rem 1rem 0.5rem 1rem; }
+        .donateGrid .donateContent .sectionDonation .cardDonate .card__text {
           font-size: 1.5rem;
           line-height: auto;
           text-align: start;
-          color: black;
-          margin: 0.7rem; }
+          color: #469CE3;
+          margin: auto 1rem 0.5rem 1rem; }
+          .donateGrid .donateContent .sectionDonation .cardDonate .card__text footer {
+            font-size: 1rem;
+            line-height: auto;
+            text-align: start;
+            color: #469CE3;
+            margin-left: 7rem; }
       .donateGrid .donateContent .sectionDonation .sectionDonation__form {
         width: 80%;
         margin: 3rem;
@@ -504,9 +515,14 @@ p {
           .donateGrid .donateContent .sectionDonation .sectionDonation__form fieldset label {
             padding: 2px; }
         .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm {
-          margin: 2px;
-          background-color: white;
-          color: black; }
+          background-color: whitesmoke;
+          color: black;
+          margin: 1rem;
+          transition: all 0.7s; }
+          .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
         @media (min-width: 768px) {
           .donateGrid .donateContent .sectionDonation .sectionDonation__form {
             width: 50%; } }
@@ -518,19 +534,18 @@ p {
       justify-content: center;
       align-items: center; }
       .donateGrid .donateContent .sectionIdeas .sectionIdeas__title--xl {
+        padding: 1rem 3rem;
+        animation-name: textAlpha;
+        animation-duration: 2s;
         font-size: 5rem;
         line-height: auto;
         text-align: center;
-        color: black; }
+        color: white; }
       .donateGrid .donateContent .sectionIdeas .sectionIdeas__text--xl {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         line-height: auto;
         text-align: center;
-        color: black; }
+        color: white; }
       .donateGrid .donateContent .sectionIdeas .sectionIdeas__form {
         width: 80%;
         margin: 3rem;
@@ -549,9 +564,14 @@ p {
           text-align: left;
           color: white; }
         .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm {
-          margin: 2px;
-          background-color: white;
-          color: black; }
+          background-color: whitesmoke;
+          color: black;
+          margin: 1rem;
+          transition: all 0.7s; }
+          .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
         @media (min-width: 768px) {
           .donateGrid .donateContent .sectionIdeas .sectionIdeas__form {
             width: 50%; } }

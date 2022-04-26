@@ -14,27 +14,34 @@
 		padding-top: 12rem;
 		background-color: map-get($map:$paleta,$key:'lightblue');
 		@include flexContent(column, center, center);
-		.sectionDonation__title--xl{
+		.donate__title--xl{
 			padding: 1rem 3rem;
 			animation-name: textAlpha;
 			animation-duration: 2s;
 			@include text($textXL, auto, center, $lightColor);
 		}
+		.donate__text--xl{
+			@include text(1.7rem, auto, center, $lightColor);
+		}
 		.sectionDonation{
 			@include flexContent(column, center, center);
-			.card{
+			.cardDonate{
 				margin: 1rem;
 				background-color: map-get($map:$paleta,$key:'superlight');
-				border-top-left-radius: 2px;
-				border-top-right-radius: 2px;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
 				@include text($textS, auto, center, $darkColor);
 				.card__title{
-					@include text($textM, auto, start, $darkColor);
-					margin: 1rem, 1rem;
+					@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
+					margin: 0.5rem 1rem 0.5rem 1rem;
 				}
 				.card__text{
-					@include text($textS, auto, start, $darkColor);
-					margin: 0.7rem;
+					@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
+					margin: auto 1rem 0.5rem 1rem;
+					footer{
+						@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
+						margin-left: 7rem;
+					}
 				}
 			}
 			.sectionDonation__form{
@@ -57,9 +64,15 @@
 				}
 				.buttonForm{
 					@extend %button;
-					margin: 2px;
-					background-color: white;
-					color: black;
+					background-color: whitesmoke;
+					color: $darkColor;
+					margin: 1rem;
+					transition: all 0.7s;
+					&:hover{
+						transform: scale(1.2);
+						background-color: map-get($map:$paleta,$key:'darkblue');
+						color: $lightColor;
+					}
 				}
 				@media (min-width: 768px){
 					width: 50%;
@@ -71,11 +84,13 @@
 			height: auto;
 			@include flexContent(column, center, center);
 			.sectionIdeas__title--xl{
-				@include text($textXL, auto, center, $darkColor);
+				padding: 1rem 3rem;
+				animation-name: textAlpha;
+				animation-duration: 2s;
+				@include text($textXL, auto, center, $lightColor);
 			}
 			.sectionIdeas__text--xl{
-				@include flexContent(column, center, center);
-				@include text($textS, auto, center, $darkColor);
+				@include text(1.7rem, auto, center, $lightColor);
 			}
 			.sectionIdeas__form{
 				width: 80%;
@@ -92,9 +107,15 @@
 				}
 				.buttonForm{
 					@extend %button;
-					margin: 2px;
-					background-color: white;
-					color: black;
+					background-color: whitesmoke;
+					color: $darkColor;
+					margin: 1rem;
+					transition: all 0.7s;
+					&:hover{
+						transform: scale(1.2);
+						background-color: map-get($map:$paleta,$key:'darkblue');
+						color: $lightColor;
+					}
 				}
 				@media (min-width: 768px){
 					width: 50%;
