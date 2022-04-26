@@ -12,7 +12,7 @@ html {
 p {
   line-height: 2rem; }
 
-.projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card .card .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm {
+.projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card .card .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
   padding: 0.3rem;
   border-color: #FFFEFF;
   border-radius: 5px;
@@ -526,55 +526,6 @@ p {
         @media (min-width: 768px) {
           .donateGrid .donateContent .sectionDonation .sectionDonation__form {
             width: 50%; } }
-    .donateGrid .donateContent .sectionIdeas {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .donateGrid .donateContent .sectionIdeas .sectionIdeas__title--xl {
-        padding: 1rem 3rem;
-        animation-name: textAlpha;
-        animation-duration: 2s;
-        font-size: 5rem;
-        line-height: auto;
-        text-align: center;
-        color: white; }
-      .donateGrid .donateContent .sectionIdeas .sectionIdeas__text--xl {
-        font-size: 1.7rem;
-        line-height: auto;
-        text-align: center;
-        color: white; }
-      .donateGrid .donateContent .sectionIdeas .sectionIdeas__form {
-        width: 80%;
-        margin: 3rem;
-        padding: 1rem;
-        background-color: #1E5096;
-        border: solid 3px white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: all; }
-        .donateGrid .donateContent .sectionIdeas .sectionIdeas__form legend {
-          color: brown; }
-        .donateGrid .donateContent .sectionIdeas .sectionIdeas__form label {
-          font-size: 1.5rem;
-          line-height: auto;
-          text-align: left;
-          color: white; }
-        .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm {
-          background-color: whitesmoke;
-          color: black;
-          margin: 1rem;
-          transition: all 0.7s; }
-          .donateGrid .donateContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
-            transform: scale(1.2);
-            background-color: #1E5096;
-            color: white; }
-        @media (min-width: 768px) {
-          .donateGrid .donateContent .sectionIdeas .sectionIdeas__form {
-            width: 50%; } }
   @media (min-width: 768px) {
     .donateGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -616,11 +567,60 @@ p {
         color: white; }
       .talkToUsGrid .talkToUsContent .sectionTalkToUs iframe {
         width: 80%; }
+    .talkToUsGrid .talkToUsContent .sectionIdeas {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__title--xl {
+        padding: 1rem 3rem;
+        animation-name: textAlpha;
+        animation-duration: 2s;
+        font-size: 5rem;
+        line-height: auto;
+        text-align: center;
+        color: white; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl {
+        font-size: 1.7rem;
+        line-height: auto;
+        text-align: center;
+        color: white; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
+        width: 80%;
+        margin: 3rem;
+        padding: 1rem;
+        background-color: #1E5096;
+        border: solid 3px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: all; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form legend {
+          color: brown; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form label {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: left;
+          color: white; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
+          background-color: whitesmoke;
+          color: black;
+          margin: 1rem;
+          transition: all 0.7s; }
+          .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
+        @media (min-width: 768px) {
+          .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
+            width: 50%; } }
   @media (min-width: 768px) {
     .talkToUsGrid {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "botonera botonera" "talkToUsContent projectsAdd" "talkToUsContent newsAdd" "pie pie"; } }
+      grid-template-areas: "botonera botonera" "talkToUsContent talkToUsContent" "projectsAdd newsAdd" "pie pie"; } }
   @media (min-width: 768px) {
     .talkToUsGrid .projectsAdd {
       height: auto;

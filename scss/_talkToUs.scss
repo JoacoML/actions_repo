@@ -29,13 +29,56 @@
 				width: 80%;
 			}
 		}
+		.sectionIdeas{
+			width: 100%;
+			height: auto;
+			@include flexContent(column, center, center);
+			.sectionIdeas__title--xl{
+				padding: 1rem 3rem;
+				animation-name: textAlpha;
+				animation-duration: 2s;
+				@include text($textXL, auto, center, $lightColor);
+			}
+			.sectionIdeas__text--xl{
+				@include text(1.7rem, auto, center, $lightColor);
+			}
+			.sectionIdeas__form{
+				width: 80%;
+				margin: 3rem;
+				padding: 1rem;
+				background-color: map-get($map:$paleta,$key:'darkblue');
+				border: solid 3px white;
+				@include flexContent(column, space-around, all);
+				legend{
+					color: brown;
+				}
+				label{
+					@include text($textS, auto, left, $lightColor);
+				}
+				.buttonForm{
+					@extend %button;
+					background-color: whitesmoke;
+					color: $darkColor;
+					margin: 1rem;
+					transition: all 0.7s;
+					&:hover{
+						transform: scale(1.2);
+						background-color: map-get($map:$paleta,$key:'darkblue');
+						color: $lightColor;
+					}
+				}
+				@media (min-width: 768px){
+					width: 50%;
+				}
+			}
+		}
 	}
 	@media (min-width: 768px){
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto auto auto auto;
 		grid-template-areas:"botonera botonera"
-							"talkToUsContent projectsAdd"
-							"talkToUsContent newsAdd"
+							"talkToUsContent talkToUsContent"
+							"projectsAdd newsAdd"
 							"pie pie";
 	}
 	.projectsAdd{

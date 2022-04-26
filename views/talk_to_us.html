@@ -49,12 +49,24 @@
 				<h2 class="talkToUs__title--m">Be a part of our community, lets chat</h2>
 				<iframe src="https://discord.com/widget?id=947302577136082945&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 			</sections>
-			<!-- Pendiente ver si se puede armar una encuesta/juego -->
-			<section>
-				<form action="quiz">
-					
-				</form>
-			</sections>
+			<section class="sectionIdeas">
+        <h2 class="sectionIdeas__title--xl">Leave your idea</h2>
+        <p class="sectionIdeas__text--xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+        <!-- mensaje de idea -->
+        <form action="ideas.php" method="post" class="sectionIdeas__form">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Donate ideas</label>
+            <textarea class="form-control" id="ideas" rows="5"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary buttonForm" type="submit">Submit form</button>
+          </div>
+        </form>
+      </sections>
 		</main>
 		<!-- ProjectsAdd -->
 		<div class="projectsAdd">
