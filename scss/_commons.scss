@@ -61,12 +61,19 @@ $paleta:(
 
 // Extend placeholder madre
 %button{
+	margin: 1rem;
 	padding: 0.3rem;
-	border-color: #FFFEFF;
+	border-color: map-get($map:$paleta,$key:'white');
 	border-radius: 5px;
 	background-color: map-get($map:$paleta,$key:'superlight');
 	text-align: center;
 	font-size: $textS;
 	text-decoration: none;
-	color: black;
+	color: $darkColor;
+	transition: all 0.7s;
+	&:hover{
+		transform: scale(1.05);
+		background-color: map-get($map:$paleta,$key:'darkblue');
+		color: $lightColor;
+	}
 }

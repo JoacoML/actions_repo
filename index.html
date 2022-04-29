@@ -51,19 +51,24 @@
       </section>
         <!-- seccion about us -->
       <section class="sectionAboutUs" id="aboutUs">
-        <div class="aboutUs">
+
+        <p class="aboutUs__text--xl">Tng text below as a natural lead-in to additional content. This content i.</p>
+
+        <div class="aboutUs__card">
           <h2 class="aboutUs__title">Card title</h2>
           <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="aboutUs">
+        <img src="img/watercontamination-actions.png" alt="Water contamination">
+        <div class="aboutUs__card">
           <h2 class="aboutUs__title">Card title</h2>
           <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="aboutUs">
+        <div class="aboutUs__card">
           <h2 class="aboutUs__title">Card title</h2>
           <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="aboutUs">
+        <img src="img/projects-actions.png" alt="Water contamination">
+        <div class="aboutUs__card">
           <h2 class="aboutUs__title">Card title</h2>
           <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
@@ -83,11 +88,12 @@
         <button class="buttonAdd">Read</button></a>
     </div>
     <!-- footer -->
-    <footer class="footer mt-auto py-3 bg-light pie">
+    <footer class="footer mt-auto py-3 my-4 bg-light pie">
       <!-- Titulo footer -->
       <div class="pie__title">
         <span class="text-muted">Visit our social media.</span>
       </div>
+
       <!-- iconos redes sociales -->
       <div class="pie__icon justify-content-end">
         <a href="https://www.instagram.com" target="_blank">
@@ -100,6 +106,31 @@
           <img src="img/discord-actions.png" alt="Discord Actions">
         </a>
       </div>
+
+      <!-- nav del footer -->
+      <ul class="nav flex-column pie__nav">
+        <li class="nav-item">
+          <a class="nav-link" href="views/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/donate.html">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
+        </li>
+      </ul>
+      <!-- logo del footer -->
+      <div class="pie__icon justify-content-end">
+        <a class="navbar-brand" href="index.html">
+          <img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo">
+        </a>
+      </div>
+      <!-- copy del footer -->
+      <p class="text-center text-muted">© 2022 Actions, Inc</p>
+
     </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

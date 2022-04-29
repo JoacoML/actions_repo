@@ -13,6 +13,7 @@ p {
   line-height: 2rem; }
 
 .projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card .card .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
+  margin: 1rem;
   padding: 0.3rem;
   border-color: #FFFEFF;
   border-radius: 5px;
@@ -20,7 +21,12 @@ p {
   text-align: center;
   font-size: 1.5rem;
   text-decoration: none;
-  color: black; }
+  color: black;
+  transition: all 0.7s; }
+  .projectsAdd a .buttonAdd:hover, .newsAdd a .buttonAdd:hover, .projectsGrid .projectsContent .projects__card .card .buttonCard:hover, .projectsGrid .donateAdd a .buttonAdd:hover, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
+    transform: scale(1.05);
+    background-color: #1E5096;
+    color: white; }
 
 .botonera {
   grid-area: botonera;
@@ -89,78 +95,84 @@ p {
   12% {
     font-size: 5rem; } }
     .homeGrid .homeContent .sectionAboutUs {
-      padding-top: 5rem;
+      padding-top: 2rem;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap; }
-      .homeGrid .homeContent .sectionAboutUs .aboutUs {
+      .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl {
+        margin: 1rem;
+        font-size: 1.7rem;
+        line-height: "";
+        text-align: center;
+        color: black; }
+      .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
         border: solid 2px black;
         width: 100%; }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs .aboutUs__title {
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__title {
           font-size: 3rem;
           line-height: auto;
           text-align: left;
           color: black;
           border-bottom: 2px solid black;
           margin: 1rem; }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs .aboutUs__text {
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__text {
           font-size: 1.5rem;
           line-height: 2rem;
           text-align: left;
           color: black;
           margin: 1rem; }
         @media (min-width: 575px) {
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(1) {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(1) {
             width: 55%; } }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) {
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
           background-color: #5AC7FA; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) .aboutUs__title {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
             text-align: center;
             color: black; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) .aboutUs__text {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__text {
             font-size: 1.5rem;
             line-height: 2rem;
             text-align: center;
             color: black; }
           @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(2) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
               width: 45%; } }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) {
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) {
           background-color: #5AC7FA; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) .aboutUs__title {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
             text-align: right;
             color: black; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) .aboutUs__text {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) .aboutUs__text {
             font-size: 1.5rem;
             line-height: 2rem;
             text-align: right;
             color: black; }
           @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(3) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) {
               width: 50%; } }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) {
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) {
           background-color: #5AC7FA; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) .aboutUs__title {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
             text-align: right;
             color: black; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) .aboutUs__text {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) .aboutUs__text {
             font-size: 1.5rem;
             line-height: 2rem;
             text-align: right;
             color: black; }
           @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs:nth-child(4) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) {
               width: 50%; } }
         @media (min-width: 575px) {
-          .homeGrid .homeContent .sectionAboutUs .aboutUs {
+          .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
             height: 30vh; } }
   @media (min-width: 768px) {
     .homeGrid {
@@ -170,7 +182,6 @@ p {
 
 .projectsAdd {
   grid-area: projectsAdd;
-  height: 30vh;
   background-color: #1E5096;
   display: flex;
   flex-direction: column;
@@ -180,25 +191,26 @@ p {
     font-size: 3rem;
     line-height: auto;
     text-align: center;
-    color: black; }
+    color: white; }
   .projectsAdd p {
+    margin: 1rem;
     font-size: 1.5rem;
     line-height: auto;
-    text-align: center;
+    text-align: start;
     color: white; }
   .projectsAdd a {
     width: 100%;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center; }
     .projectsAdd a .buttonAdd {
-      margin: 2px; }
+      width: 30%;
+      background-color: #469CE3; }
 
 .newsAdd {
   grid-area: newsAdd;
-  height: 30vh;
   background-color: #469CE3;
   display: flex;
   flex-direction: column;
@@ -208,21 +220,24 @@ p {
     font-size: 3rem;
     line-height: auto;
     text-align: center;
-    color: black; }
+    color: white; }
   .newsAdd p {
+    margin: 1rem;
     font-size: 1.5rem;
     line-height: auto;
-    text-align: center;
+    text-align: start;
     color: white; }
   .newsAdd a {
     width: 100%;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center; }
     .newsAdd a .buttonAdd {
-      margin: 2px; }
+      width: 30%; }
+      .newsAdd a .buttonAdd:hover {
+        background-color: #469CE3; }
 
 /* Projects */
 .projectsGrid {
@@ -248,6 +263,12 @@ p {
       animation-duration: 2s;
       font-size: 5rem;
       line-height: auto;
+      text-align: center;
+      color: white; }
+    .projectsGrid .projectsContent .projects__text--xl {
+      margin: 1rem;
+      font-size: 1.7rem;
+      line-height: "";
       text-align: center;
       color: white; }
     .projectsGrid .projectsContent .projects__card {
@@ -284,16 +305,9 @@ p {
           color: white;
           margin: auto 1rem; }
         .projectsGrid .projectsContent .projects__card .card .buttonCard {
-          background-color: whitesmoke;
-          color: black;
-          margin: 1rem;
-          transition: all 0.7s; }
-          .projectsGrid .projectsContent .projects__card .card .buttonCard:hover {
-            transform: scale(1.2);
-            background-color: #1E5096;
-            color: white; }
+          background-color: #FFFEFF; }
         .projectsGrid .projectsContent .projects__card .card:hover {
-          transform: scale(1.05);
+          transform: scale(1.02);
           background-color: #020301; }
       @media (min-width: 768px) {
         .projectsGrid .projectsContent .projects__card {
@@ -327,8 +341,6 @@ p {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
-      .projectsGrid .donateAdd a .buttonAdd {
-        margin: 2px; }
   @media (min-width: 768px) {
     .projectsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -359,6 +371,12 @@ p {
       animation-duration: 2s;
       font-size: 5rem;
       line-height: auto;
+      text-align: center;
+      color: white; }
+    .newsGrid .newsContent .news__text--xl {
+      margin: 1rem;
+      font-size: 1.7rem;
+      line-height: "";
       text-align: center;
       color: white; }
     .newsGrid .newsContent .news__box {
@@ -466,33 +484,6 @@ p {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .donateGrid .donateContent .sectionDonation .cardDonate {
-        margin: 1rem;
-        background-color: #E3FEFF;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        font-size: 1.5rem;
-        line-height: auto;
-        text-align: center;
-        color: black; }
-        .donateGrid .donateContent .sectionDonation .cardDonate .card__title {
-          font-size: 2rem;
-          line-height: auto;
-          text-align: start;
-          color: #469CE3;
-          margin: 0.5rem 1rem 0.5rem 1rem; }
-        .donateGrid .donateContent .sectionDonation .cardDonate .card__text {
-          font-size: 1.5rem;
-          line-height: auto;
-          text-align: start;
-          color: #469CE3;
-          margin: auto 1rem 0.5rem 1rem; }
-          .donateGrid .donateContent .sectionDonation .cardDonate .card__text footer {
-            font-size: 1rem;
-            line-height: auto;
-            text-align: start;
-            color: #469CE3;
-            margin-left: 7rem; }
       .donateGrid .donateContent .sectionDonation .sectionDonation__form {
         width: 80%;
         margin: 3rem;
@@ -526,6 +517,33 @@ p {
         @media (min-width: 768px) {
           .donateGrid .donateContent .sectionDonation .sectionDonation__form {
             width: 50%; } }
+      .donateGrid .donateContent .sectionDonation .cardDonate {
+        margin: 1rem;
+        background-color: #E3FEFF;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 1.5rem;
+        line-height: auto;
+        text-align: center;
+        color: black; }
+        .donateGrid .donateContent .sectionDonation .cardDonate .card__title {
+          font-size: 2rem;
+          line-height: auto;
+          text-align: start;
+          color: #469CE3;
+          margin: 0.5rem 1rem 0.5rem 1rem; }
+        .donateGrid .donateContent .sectionDonation .cardDonate .card__text {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: start;
+          color: #469CE3;
+          margin: auto 1rem 0.5rem 1rem; }
+          .donateGrid .donateContent .sectionDonation .cardDonate .card__text footer {
+            font-size: 1rem;
+            line-height: auto;
+            text-align: start;
+            color: #469CE3;
+            margin-left: 7rem; }
   @media (min-width: 768px) {
     .donateGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -616,6 +634,25 @@ p {
         @media (min-width: 768px) {
           .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
             width: 50%; } }
+    .talkToUsGrid .talkToUsContent .advisorContact {
+      width: 100%;
+      height: 100vh;
+      background-color: #5AC7FA;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
+        margin-top: 7rem;
+        font-size: 5rem;
+        line-height: auto;
+        text-align: center;
+        color: white; }
+      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--m {
+        font-size: 1.5rem;
+        line-height: auto;
+        text-align: center;
+        color: white; }
   @media (min-width: 768px) {
     .talkToUsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -637,16 +674,25 @@ p {
   grid-area: pie;
   background-color: #FFFEFF;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: "";
   align-items: center; }
   .pie .pie__title {
+    border: solid 2px black;
     font-size: 1.5rem;
     line-height: auto;
     text-align: center;
     color: black; }
-  .pie .pie__icon img {
-    width: 3rem;
-    margin: 0.5rem 0.5rem; }
-  .pie .pie__icon a {
+  .pie .pie__icon {
+    border: solid 2px black; }
+    .pie .pie__icon img {
+      width: 3rem;
+      margin: 0.5rem 0.5rem; }
+    .pie .pie__icon a {
+      text-decoration: none; }
+  .pie .pie__nav a {
+    font-size: 1.5rem;
+    line-height: auto;
+    text-align: center;
+    color: #020301;
     text-decoration: none; }

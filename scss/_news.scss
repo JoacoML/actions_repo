@@ -23,6 +23,10 @@
 			animation-duration: 2s;
 			@include text($textXL, auto, center, $lightColor);
 		}
+		.news__text--xl{
+			margin: 1rem;
+			@include text(1.7rem, "", center, $lightColor);
+		}
 		.news__box{
 			width: auto;
 			flex-wrap: wrap;

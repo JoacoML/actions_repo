@@ -44,10 +44,14 @@
 			}
 		}
 		.sectionAboutUs{
-			padding-top: 5rem;
+			padding-top: 2rem;
 			@include flexContent(row, space-evenly, center);
 			flex-wrap: wrap;
-			.aboutUs{
+			.aboutUs__text--xl{
+				margin: 1rem;
+				@include text(1.7rem, "", center, $darkColor);
+			}
+			.aboutUs__card{
 				border: solid 2px black;
 				width: 100%;
 				.aboutUs__title{
@@ -117,43 +121,47 @@
 }
 .projectsAdd{
 	grid-area: projectsAdd;
-	height: 30vh;
 	background-color: map-get($map:$paleta,$key:'darkblue');
 	@include flexContent(column, space-evenly, center);
 	h2{
-		@include text($textM, auto, center, $darkColor);
+		@include text($textM, auto, center, $lightColor);
 	}
 	p{
-		@include text($textS, auto, center, $lightColor);
+		margin: 1rem;
+		@include text($textS, auto, start, $lightColor);
 	}
 	a{
 		width: 100%;
 		text-decoration: none;
-		@include flexContent(column, space-evenly, center);
+		@include flexContent(row, flex-end, center);
 		.buttonAdd{
 			@extend %button;
-			margin: 2px;
+			width: 30%;
+			background-color: map-get($map:$paleta,$key:'blue');
 		}
 	}
 }
 .newsAdd{
 	grid-area: newsAdd;
-	height: 30vh;
 	background-color: map-get($map:$paleta,$key:'blue');
 	@include flexContent(column, space-evenly, center);
 	h2{
-		@include text($textM, auto, center, $darkColor);
+		@include text($textM, auto, center, $lightColor);
 	}
 	p{
-		@include text($textS, auto, center, $lightColor);
+		margin: 1rem;
+		@include text($textS, auto, start, $lightColor);
 	}
 	a{
 		width: 100%;
 		text-decoration: none;
-		@include flexContent(column, space-evenly, center);
+		@include flexContent(row, flex-end, center);
 		.buttonAdd{
 			@extend %button;
-			margin: 2px;
+			width: 30%;
+			&:hover{
+				background-color: map-get($map:$paleta,$key:'blue');
+			}
 		}
 	}
 }

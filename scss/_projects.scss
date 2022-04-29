@@ -23,6 +23,10 @@
 			animation-duration: 2s;
 			@include text($textXL, auto, center, $lightColor);
 		}
+		.projects__text--xl{
+			margin: 1rem;
+			@include text(1.7rem, "", center, $lightColor);
+		}
 		.projects__card{
 			@include flexContent(column, center, center);
 			.card{
@@ -50,18 +54,10 @@
 				}
 				.buttonCard{
 					@extend %button;
-					background-color: whitesmoke;
-					color: $darkColor;
-					margin: 1rem;
-					transition: all 0.7s;
-					&:hover{
-						transform: scale(1.2);
-						background-color: map-get($map:$paleta,$key:'darkblue');
-						color: $lightColor;
-					}
+					background-color: map-get($map:$paleta,$key:'white');
 				}
 				&:hover{
-					transform: scale(1.05);
+					transform: scale(1.02);
 					background-color: map-get($map:$paleta,$key:'dark');
 				}
 			}
@@ -88,7 +84,6 @@
 			@include flexContent(column, space-evenly, center);
 			.buttonAdd{
 				@extend %button;
-				margin: 2px;
 			}
 		}
 	}

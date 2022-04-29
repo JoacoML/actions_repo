@@ -25,25 +25,6 @@
 		}
 		.sectionDonation{
 			@include flexContent(column, center, center);
-			.cardDonate{
-				margin: 1rem;
-				background-color: map-get($map:$paleta,$key:'superlight');
-				border-top-left-radius: 5px;
-				border-top-right-radius: 5px;
-				@include text($textS, auto, center, $darkColor);
-				.card__title{
-					@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
-					margin: 0.5rem 1rem 0.5rem 1rem;
-				}
-				.card__text{
-					@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
-					margin: auto 1rem 0.5rem 1rem;
-					footer{
-						@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
-						margin-left: 7rem;
-					}
-				}
-			}
 			.sectionDonation__form{
 				width: 80%;
 				margin: 3rem;
@@ -76,6 +57,25 @@
 				}
 				@media (min-width: 768px){
 					width: 50%;
+				}
+			}
+			.cardDonate{
+				margin: 1rem;
+				background-color: map-get($map:$paleta,$key:'superlight');
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				@include text($textS, auto, center, $darkColor);
+				.card__title{
+					@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
+					margin: 0.5rem 1rem 0.5rem 1rem;
+				}
+				.card__text{
+					@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
+					margin: auto 1rem 0.5rem 1rem;
+					footer{
+						@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
+						margin-left: 7rem;
+					}
 				}
 			}
 		}
