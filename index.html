@@ -1,138 +1,219 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- SEO -->
-    <title>Actions</title>
-    <meta name="description" content="an organization that seeks to promote sustainable projects">
-    <meta name="keywords" content="sustainable projects, entrepreneurs, circular economy, pollution, global warming">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Actions CSS -->
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body class="homeGrid">
-    <!-- Botonera -->
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top botonera">
-      <div class="container-fluid" >
-        <a class="navbar-brand" href="index.html"><img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo"></a>
-        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- SEO -->
+  <title>Actions</title>
+  <meta name="description" content="an organization that seeks to promote sustainable projects">
+  <meta name="keywords" content="sustainable projects, entrepreneurs, circular economy, pollution, global warming">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Actions CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="homeGrid">
+  <!-- Botonera -->
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top botonera">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="botonera__logo" src="img/logo-actions.png"
+          alt="Actions logo"></a>
+      <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#aboutUs">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Home -->
+  <main class="homeContent">
+
+    <section class="sectionHome">
+      <!-- Carousel -->
+      <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class=" active carousel-item">
+            <img src="img/carousel-1.png" class="d-block w-100" alt="portada">
+            <div class="carousel-caption d-md-block">
+              <p class="text-carousel">It's time for <span>actions</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel-2.png" class="d-block w-100" alt="portada1">
+            <div class="carousel-caption d-md-block">
+              <p class="text-carousel">It's time for <span>actions</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel-3.png" class="d-block w-100" alt="portada2">
+            <div class="carousel-caption d-md-block">
+              <p class="text-carousel">It's time for <span>actions</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#aboutUs">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="views/projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="views/news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="views/donate.html">Donate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Home -->
-    <main class="homeContent">
-      <section class="sectionHome">
-        <h1 class="sectionHome__title--xl">It's time for <span>actions</span></h1>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
       </section>
-        <!-- seccion about us -->
-      <section class="sectionAboutUs" id="aboutUs">
 
-        <p class="aboutUs__text--xl">Tng text below as a natural lead-in to additional content. This content i.</p>
+    </section>
+    <!-- seccion about us -->
+    <section class="sectionAboutUs" id="aboutUs">
 
-        <div class="aboutUs__card">
-          <h2 class="aboutUs__title">Card title</h2>
-          <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="aboutUs__text--xl">Tng text below as a natural lead-in to additional content. <span>actions</span> this content i.</p>
+
+      <div class="conteiner">
+
+        <div class="row">
+
+          <div class="col-md-6 col-sm-12 aboutUs__card">
+
+            <div class="m-1">
+              <h2 class="aboutUs__title">Card title</h2>
+              <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            </div>
+
+            <img src="img/watercontamination-actions.png" alt="Water contamination">
+
+            <div class= m-1>
+              <h2 class="aboutUs__title">Card title</h2>
+              <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-sm-12 aboutUs__card">
+
+            <div class= "m-1">
+              <h2 class="aboutUs__title">Card title</h2>
+              <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            </div>
+
+            <img src="img/projects-actions.png" alt="Water contamination">
+
+            <div class="m-1">
+              <h2 class="aboutUs__title">Card title</h2>
+              <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            </div>
+
+          </div>
         </div>
-        <img src="img/watercontamination-actions.png" alt="Water contamination">
-        <div class="aboutUs__card">
-          <h2 class="aboutUs__title">Card title</h2>
-          <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="aboutUs__card">
-          <h2 class="aboutUs__title">Card title</h2>
-          <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <img src="img/projects-actions.png" alt="Water contamination">
-        <div class="aboutUs__card">
-          <h2 class="aboutUs__title">Card title</h2>
-          <p class="aboutUs__text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </section>
-    </main>
-    <!-- ProjectsAdd -->
-    <div class="projectsAdd">
-      <h2>Projects</h2>
-      <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
-      <a href="views/projects.html"><button class="buttonAdd">Learn more</button></a>
+      </div>
+
+    </section>
+  </main>
+  <!-- ProjectsAdd -->
+  <div class="projectsAdd">
+    <h2>Projects</h2>
+    <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui
+      esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
+    <a href="views/projects.html"><button class="buttonAdd">Learn more</button></a>
+  </div>
+  <!-- NewsAdd -->
+  <div class="newsAdd">
+    <h2>News</h2>
+    <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet,
+      consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
+    <a href="views/news.html">
+      <button class="buttonAdd">Read</button></a>
+  </div>
+  <!-- footer -->
+  <footer class="footer mt-auto py-3 my-4 bg-light pie">
+    <!-- Titulo footer -->
+    <div class="pie__title">
+      <span class="text-muted">Visit our social media.</span>
     </div>
-    <!-- NewsAdd -->
-    <div class="newsAdd">
-      <h2>News</h2>
-      <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
-      <a href="views/news.html">
-        <button class="buttonAdd">Read</button></a>
+
+    <!-- iconos redes sociales -->
+    <div class="pie__icon justify-content-end">
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img/instagram-actions.png" alt=" Instagram Actions">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="img/twitter-actions.png" alt="Twitter Actions">
+      </a>
+      <a href="https://discord.com" target="_blank">
+        <img src="img/discord-actions.png" alt="Discord Actions">
+      </a>
     </div>
-    <!-- footer -->
-    <footer class="footer mt-auto py-3 my-4 bg-light pie">
-      <!-- Titulo footer -->
-      <div class="pie__title">
-        <span class="text-muted">Visit our social media.</span>
-      </div>
 
-      <!-- iconos redes sociales -->
-      <div class="pie__icon justify-content-end">
-        <a href="https://www.instagram.com" target="_blank">
-          <img src="img/instagram-actions.png" alt=" Instagram Actions">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="img/twitter-actions.png" alt="Twitter Actions">
-        </a>
-        <a href="https://discord.com" target="_blank">
-          <img src="img/discord-actions.png" alt="Discord Actions">
-        </a>
-      </div>
+    <!-- nav del footer -->
+    <ul class="nav flex-column pie__nav">
+      <li class="nav-item">
+        <a class="nav-link" href="views/projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="views/news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="views/donate.html">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
+      </li>
+    </ul>
+    <!-- logo del footer -->
+    <div class="pie__icon justify-content-end">
+      <a class="navbar-brand" href="index.html">
+        <img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo">
+      </a>
+    </div>
+    <!-- copy del footer -->
+    <p class="text-center text-muted">© 2022 Actions, Inc</p>
 
-      <!-- nav del footer -->
-      <ul class="nav flex-column pie__nav">
-        <li class="nav-item">
-          <a class="nav-link" href="views/projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="views/news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="views/donate.html">Donate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="views/talk_to_us.html">Talk to us</a>
-        </li>
-      </ul>
-      <!-- logo del footer -->
-      <div class="pie__icon justify-content-end">
-        <a class="navbar-brand" href="index.html">
-          <img class="botonera__logo" src="img/logo-actions.png" alt="Actions logo">
-        </a>
-      </div>
-      <!-- copy del footer -->
-      <p class="text-center text-muted">© 2022 Actions, Inc</p>
+  </footer>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
 
-    </footer>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
 </html>

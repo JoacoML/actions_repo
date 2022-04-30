@@ -55,21 +55,16 @@ p {
     justify-content: center;
     align-items: all;
     margin-top: 12vh; }
-    .homeGrid .homeContent .sectionHome {
-      height: 80vh;
-      background-image: url(../img/header-actions.png);
-      background-position: center;
-      background-size: cover;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: all; }
-      .homeGrid .homeContent .sectionHome .sectionHome__title--xl {
-        margin-top: 10vh;
+    .homeGrid .homeContent .sectionHome .carousel .carousel-inner {
+      height: 80vh; }
+      .homeGrid .homeContent .sectionHome .carousel .carousel-inner img {
+        height: 80vh; }
+      .homeGrid .homeContent .sectionHome .carousel .carousel-inner .text-carousel {
+        margin-top: 80vh;
         font-size: 5rem;
-        line-height: auto;
+        line-height: 7rem;
         text-align: center;
-        color: black;
+        color: white;
         animation-name: textAlpha;
         animation-duration: 3s; }
 
@@ -78,102 +73,59 @@ p {
     opacity: 0; }
   to {
     opacity: 1; } }
-        .homeGrid .homeContent .sectionHome .sectionHome__title--xl span {
+        .homeGrid .homeContent .sectionHome .carousel .carousel-inner .text-carousel span {
           text-transform: uppercase;
-          color: white;
-          animation-name: beat;
-          animation-iteration-count: infinite;
-          animation-duration: 2s; }
-
-@keyframes beat {
-  2% {
-    font-size: 6rem; }
-  6% {
-    font-size: 5rem; }
-  8% {
-    font-size: 6rem; }
-  12% {
-    font-size: 5rem; } }
+          background-color: rgba(2, 12, 43, 0.95);
+          border-radius: 40rem;
+          font-size: 4rem;
+          padding: 1rem; }
     .homeGrid .homeContent .sectionAboutUs {
       padding-top: 2rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      background-color: #469CE3; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl {
+        border-top: solid 2px white;
         margin: 1rem;
+        padding: 1rem;
         font-size: 1.7rem;
         line-height: "";
         text-align: center;
-        color: black; }
+        color: white; }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl span {
+          text-transform: uppercase;
+          color: #1E5096; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
-        border: solid 2px black;
-        width: 100%; }
+        padding: 2rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__title {
           font-size: 3rem;
           line-height: auto;
           text-align: left;
-          color: black;
-          border-bottom: 2px solid black;
+          color: white;
+          border-bottom: 2px solid white;
           margin: 1rem; }
+        .homeGrid .homeContent .sectionAboutUs .aboutUs__card img {
+          width: 100%; }
+          @media (min-width: 768px) {
+            .homeGrid .homeContent .sectionAboutUs .aboutUs__card img {
+              height: 40vh; } }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__text {
           font-size: 1.5rem;
           line-height: 2rem;
           text-align: left;
-          color: black;
+          color: white;
           margin: 1rem; }
-        @media (min-width: 575px) {
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(1) {
-            width: 55%; } }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
-          background-color: #5AC7FA; }
+          background-color: #FFFEFF; }
           .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
-            text-align: center;
+            text-align: right;
             color: black; }
           .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__text {
             font-size: 1.5rem;
             line-height: 2rem;
-            text-align: center;
-            color: black; }
-          @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
-              width: 45%; } }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) {
-          background-color: #5AC7FA; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) .aboutUs__title {
-            font-size: 3rem;
-            line-height: auto;
             text-align: right;
             color: black; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) .aboutUs__text {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            text-align: right;
-            color: black; }
-          @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(3) {
-              width: 50%; } }
-        .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) {
-          background-color: #5AC7FA; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) .aboutUs__title {
-            font-size: 3rem;
-            line-height: auto;
-            text-align: right;
-            color: black; }
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) .aboutUs__text {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            text-align: right;
-            color: black; }
-          @media (min-width: 575px) {
-            .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(4) {
-              width: 50%; } }
-        @media (min-width: 575px) {
-          .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
-            height: 30vh; } }
   @media (min-width: 768px) {
     .homeGrid {
       grid-template-columns: repeat(2, 1fr);
