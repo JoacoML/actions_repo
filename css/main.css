@@ -624,11 +624,7 @@ p {
 /*Footer*/
 .pie {
   grid-area: pie;
-  background-color: #FFFEFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
+  background-color: #FFFEFF; }
   .pie .pie__nav a {
     font-size: 1.7rem;
     line-height: auto;
@@ -652,7 +648,7 @@ p {
   .pie .pie__icon {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 1rem; }
     .pie .pie__icon img {
@@ -666,3 +662,9 @@ p {
     line-height: auto;
     text-align: center;
     color: black; }
+  @media (min-width: 768px) {
+    .pie {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; } }

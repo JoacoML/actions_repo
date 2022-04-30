@@ -2,7 +2,6 @@
 .pie{
 	grid-area: pie;
 	background-color: map-get($map:$paleta,$key:'white');
-	@include flexContent(row, space-around, center);
 	.pie__nav{
 		a{
 			@include text(1.7rem, auto, center, map-get($map:$paleta,$key:'dark'));
@@ -21,7 +20,7 @@
 		}
 	}
 	.pie__icon{
-		@include flexContent(row, space-around, center);
+		@include flexContent(row, center, center);
 		margin: 1rem;
 		img{
 			width: 5vh;
@@ -34,5 +33,8 @@
 	.pie__copy{
 		margin-top: 1rem;
 		@include text(1.5rem, auto, center, $darkColor);
+	}
+	@media (min-width: 768px){
+		@include flexContent(row, space-around, center);
 	}
 }
