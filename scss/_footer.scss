@@ -2,25 +2,37 @@
 .pie{
 	grid-area: pie;
 	background-color: map-get($map:$paleta,$key:'white');
-	@include flexContent(column, "", center);
+	@include flexContent(row, space-around, center);
+	.pie__nav{
+		a{
+			@include text(1.7rem, auto, center, map-get($map:$paleta,$key:'dark'));
+			text-decoration: none;
+		}
+	}
 	.pie__title{
-		border: solid 2px black;
-		@include text($textS, auto, center, $darkColor);
+		@include text(2rem, auto, center, $darkColor);
+		padding: 0.5rem;
+	}
+	.pie__logo{
+		@include flexContent(row, space-around, center);
+		img{
+			border: solid 2px whitesmoke;
+			width: 18rem;
+		}
 	}
 	.pie__icon{
-		border: solid 2px black;
+		@include flexContent(row, space-around, center);
+		margin: 1rem;
 		img{
-			width: 3rem;
+			width: 5vh;
 			margin: 0.5rem 0.5rem;
 		}
 		a{
 			text-decoration: none;
 		}
 	}
-	.pie__nav{
-		a{
-			@include text($textS, auto, center, map-get($map:$paleta,$key:'dark'));
-			text-decoration: none;
-		}
+	.pie__copy{
+		margin-top: 1rem;
+		@include text(1.5rem, auto, center, $darkColor);
 	}
 }
