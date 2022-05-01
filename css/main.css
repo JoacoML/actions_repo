@@ -9,9 +9,6 @@
 html {
   font-size: 62.5%; }
 
-p {
-  line-height: 2rem; }
-
 .projectsAdd a .buttonAdd, .newsAdd a .buttonAdd, .projectsGrid .projectsContent .projects__card .card .buttonCard, .projectsGrid .donateAdd a .buttonAdd, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm, .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
   margin: 1rem;
   padding: 0.3rem;
@@ -24,7 +21,7 @@ p {
   color: black;
   transition: all 0.7s; }
   .projectsAdd a .buttonAdd:hover, .newsAdd a .buttonAdd:hover, .projectsGrid .projectsContent .projects__card .card .buttonCard:hover, .projectsGrid .donateAdd a .buttonAdd:hover, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: #1E5096;
     color: white; }
 
@@ -101,7 +98,6 @@ p {
           line-height: auto;
           text-align: left;
           color: white;
-          border-bottom: 2px solid white;
           margin: 1rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card img {
           width: 100%; }
@@ -140,13 +136,14 @@ p {
   justify-content: space-evenly;
   align-items: center; }
   .projectsAdd h2 {
+    padding: 1rem;
     font-size: 3rem;
     line-height: auto;
     text-align: center;
     color: white; }
   .projectsAdd p {
-    margin: 1rem;
-    font-size: 1.5rem;
+    margin: auto 1.5rem;
+    font-size: 1.7rem;
     line-height: auto;
     text-align: start;
     color: white; }
@@ -158,8 +155,9 @@ p {
     justify-content: flex-end;
     align-items: center; }
     .projectsAdd a .buttonAdd {
+      color: white;
       width: 30%;
-      background-color: #469CE3; }
+      background-color: #1E5096; }
 
 .newsAdd {
   grid-area: newsAdd;
@@ -169,13 +167,14 @@ p {
   justify-content: space-evenly;
   align-items: center; }
   .newsAdd h2 {
+    padding: 1rem;
     font-size: 3rem;
     line-height: auto;
     text-align: center;
     color: white; }
   .newsAdd p {
-    margin: 1rem;
-    font-size: 1.5rem;
+    margin: auto 2rem;
+    font-size: 1.7rem;
     line-height: auto;
     text-align: start;
     color: white; }
@@ -187,7 +186,9 @@ p {
     justify-content: flex-end;
     align-items: center; }
     .newsAdd a .buttonAdd {
-      width: 30%; }
+      width: 30%;
+      background-color: #469CE3;
+      color: white; }
       .newsAdd a .buttonAdd:hover {
         background-color: #469CE3; }
 

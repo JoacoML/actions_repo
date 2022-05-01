@@ -12,10 +12,6 @@ html{
 	font-size: 62.5%;
 }
 
-p{
-	line-height: 2rem;
-}
-
 // Variables
 
 $backColor: black;
@@ -73,7 +69,7 @@ $paleta:(
 	color: $darkColor;
 	transition: all 0.7s;
 	&:hover{
-		transform: scale(1.05);
+		transform: scale(1.1);
 		background-color: map-get($map:$paleta,$key:'darkblue');
 		color: $lightColor;
 	}
