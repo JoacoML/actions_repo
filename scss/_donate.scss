@@ -13,7 +13,6 @@
 		grid-area: donateContent;
 		padding-top: 12rem;
 		background-color: map-get($map:$paleta,$key:'lightblue');
-		@include flexContent(column, center, center);
 		.donate__title--xl{
 			padding: 1rem 3rem;
 			animation-name: textAlpha;
@@ -24,15 +23,11 @@
 			@include text(1.7rem, auto, center, $lightColor);
 		}
 		.sectionDonation{
-			@include flexContent(column, center, center);
 			.sectionDonation__form{
-				width: 80%;
-				margin: 3rem;
-				padding: 1rem;
 				border: solid 3px white;
 				background-color: map-get($map:$paleta,$key:'darkblue');
-				@include flexContent(row, center, all);
 				@include text($textS, auto, left, $lightColor);
+				justify-content: space-around;
 				fieldset{
 					font-size: 1.7rem;
 					legend{
@@ -47,7 +42,6 @@
 					@extend %button;
 					background-color: whitesmoke;
 					color: $darkColor;
-					margin: 1rem;
 					transition: all 0.7s;
 					&:hover{
 						transform: scale(1.2);
@@ -55,26 +49,23 @@
 						color: $lightColor;
 					}
 				}
-				@media (min-width: 768px){
-					width: 50%;
-				}
 			}
-			.cardDonate{
-				margin: 1rem;
-				background-color: map-get($map:$paleta,$key:'superlight');
-				border-top-left-radius: 5px;
-				border-top-right-radius: 5px;
-				@include text($textS, auto, center, $darkColor);
-				.card__title{
-					@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
-					margin: 0.5rem 1rem 0.5rem 1rem;
-				}
-				.card__text{
-					@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
-					margin: auto 1rem 0.5rem 1rem;
-					footer{
-						@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
-						margin-left: 7rem;
+			.donate__quotes{
+				justify-content: space-evenly;
+				.cardDonate{
+					background-color: map-get($map:$paleta,$key:'superlight');
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					@include text($textS, auto, center, $darkColor);
+					.card__title{
+						@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
+					}
+					.card__text{
+						@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
+						footer{
+							@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
+							margin-left: 7rem;
+						}
 					}
 				}
 			}

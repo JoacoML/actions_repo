@@ -1,253 +1,274 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Donations make a difference</title>
-    <meta name="description"
-      content="you can make donations that will be used directly to invest in sustainable entrepreneurs">
-    <meta name="keywords" content="donation projects news ideas help">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Actions CSS -->
-    <link rel="stylesheet" href="../css/main.css">
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Donations make a difference</title>
+  <meta name="description"
+    content="you can make donations that will be used directly to invest in sustainable entrepreneurs">
+  <meta name="keywords" content="donation projects news ideas help">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Actions CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
 
-  <body class="donateGrid">
-    <!-- Botonera -->
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top botonera">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="botonera__logo" src="../img/logo-actions.png"
-            alt="Actions logo"></a>
-        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="talk_to_us.html">Talk to us</a>
-            </li>
-          </ul>
-        </div>
+<body class="donateGrid">
+  <!-- Botonera -->
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top botonera">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img class="botonera__logo" src="../img/logo-actions.png"
+          alt="Actions logo"></a>
+      <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end botonera__lista" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talk_to_us.html">Talk to us</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Seccion donate-->
-    <main class="donateContent">
-      <h1 class="donate__title--xl">Donate</h1>
-      <p class="donate__text--xl">Your soppourt to an entreprenuer can make your a shareholder. Invest.</p>
-      <section class="sectionDonation">
-        
-         <!-- Form Donate -->
-         <form action="donate.php" method="post" enctype="" class="row g-3 needs-validation sectionDonation__form"
-         novalidate>
-         <fieldset>
-           <legend>Your details</legend>
-           <div class="mb-3">
-             <label for="name" class="form-label">Full name</label>
-             <input type="text" class="form-control" id="name" placeholder="Joaquin Martin Lanfranchi">
-           </div>
-           <div class="mb-3">
-             <label for="email" class="form-label">Email address</label>
-             <input type="email" class="form-control" id="email" placeholder="name@example.com">
-           </div>
-           <label for="Region">Region</label>
-           <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="region"
-             id="region">
-             <option selected>Open this select menu</option>
-             <option value="asia">Asia</option>
-             <option value="africa">Africa</option>
-             <option value="europe">Europe</option>
-             <option value="north america">North America</option>
-             <option value="south america">South America</option>
-             <option value="oceania">Oceania</option>
-           </select>
-         </fieldset>
-         <fieldset>
-           <legend>Donation</legend>
-           <div class="form-check">
-             <input class="form-check-input" type="radio" name="coin" id="USD" value="USD">
-             <label class="form-check-label" for="EUR">EUR
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="radio" name="coin" id="USD" value="USD">
-             <label class="form-check-label" for="USD">USD
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" nname="credit" id="credit" value="credit">
-             <label class="form-check-label" for="credit">
-               Credit card
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" name="transfer" id="transfer" value="transfer" checked>
-             <label class="form-check-label" for="transfer">
-               Bank transfer
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" name="crypto" id="crypto" value="crypto">
-             <label class="form-check-label" for="crypto">
-               Crypto
-             </label>
-           </div>
-           <div class="input-group mb-3">
-             <span class="input-group-text">$</span>
-             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-             <span class="input-group-text">.00</span>
-           </div>
-         </fieldset>
-         <div class="col-12">
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-             <label class="form-check-label" for="invalidCheck">Agree to terms and conditions
-             </label>
-             <div class="invalid-feedback">
-               You must agree before submitting.</div>
-           </div>
-         </div>
-         <div class="col-12">
-           <button class="btn btn-primary buttonForm" type="submit">Submit form</button>
-         </div>
-       </form>
-        <!-- Quotes de companies 1 -->
-        <div class="cardDonate">
-          <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
-          <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
-          <div class="card__text">
-            <blockquote class="mb-0">
-              <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.</p>
-              <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite></footer>
-            </blockquote>
-          </div>
-        </div>
-        <!-- Quotes de companies 2 -->
-        <div class="cardDonate">
-          <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
-          <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
-          <div class="card__text">
-            <blockquote class="mb-0">
-              <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.</p>
-              <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite></footer>
-            </blockquote>
-          </div>
-        </div>
-        <!-- Quotes de companies 3 -->
-        <div class="cardDonate">
-          <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
-          <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
-          <div class="card__text">
-            <blockquote class="mb-0">
-              <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.</p>
-              <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite></footer>
-            </blockquote>
-          </div>
-        </div>
-        <!-- Quotes de companies 4 -->
-        <div class="cardDonate">
-          <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
-          <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
-          <div class="card__text">
-            <blockquote class="mb-0">
-              <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.</p>
-              <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite></footer>
-            </blockquote>
-          </div>
-        </div>
-
-      </sections>
-    </main>
-    <!-- ProjectsAdd -->
-    <div class="projectsAdd">
-      <h2>Projects</h2>
-      <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui
-        esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
-      <a href="projects.html"><button class="buttonAdd">Learn more</button></a>
     </div>
-    <!-- NewsAdd -->
-    <div class="newsAdd">
-      <h2>News</h2>
-      <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet,
-        consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
-      <a href="news.html"><button class="buttonAdd">Read</button></a>
+  </nav>
+  <!-- Seccion donate-->
+  <main class="donateContent">
+    <h1 class="donate__title--xl">Donate</h1>
+    <p class="donate__text--xl">Your soppourt to an entreprenuer can make your a shareholder. Invest.</p>
+    <section class="sectionDonation">
+
+      <div class="conteiner m-4 p-3">
+        <!-- Form Donate -->
+        <form action="donate.php" method="post" enctype="" class="row p-3 g-3 needs-validation sectionDonation__form"
+          novalidate>
+          <fieldset class="col-sm-12 col-md-5 m-2">
+            <legend>Your details</legend>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="name" placeholder="Joaquin Martin Lanfranchi">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <label for="Region">Region</label>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="region"
+              id="region">
+              <option selected>Open this select menu</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="europe">Europe</option>
+              <option value="north america">North America</option>
+              <option value="south america">South America</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </fieldset>
+          <fieldset class="col-sm-12 col-md-5 m-2">
+            <legend>Donation</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="coin" id="USD" value="USD">
+              <label class="form-check-label" for="EUR">EUR
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="coin" id="USD" value="USD">
+              <label class="form-check-label" for="USD">USD
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" nname="credit" id="credit" value="credit">
+              <label class="form-check-label" for="credit">
+                Credit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="transfer" id="transfer" value="transfer" checked>
+              <label class="form-check-label" for="transfer">
+                Bank transfer
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="crypto" id="crypto" value="crypto">
+              <label class="form-check-label" for="crypto">
+                Crypto
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+          </fieldset>
+          <div class="col-12">
+            <div class="form-check">
+              <input class=" form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary buttonForm" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="conteiner p-4">
+        <div class="row donate__quotes">
+
+          <!-- Quotes de companies 1 -->
+          <div class=" col-sm-10 col-md-5 p-2 my-2 cardDonate">
+            <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
+            <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
+            <div class="card__text">
+              <blockquote class="mb-0">
+                <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.
+                </p>
+                <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Quotes de companies 2 -->
+          <div class="col-sm-10 col-md-5 p-2 my-2 cardDonate">
+            <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
+            <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
+            <div class="card__text">
+              <blockquote class="mb-0">
+                <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.
+                </p>
+                <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Quotes de companies 1 -->
+          <div class=" col-sm-10 col-md-5 p-2 my-2 cardDonate">
+            <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
+            <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
+            <div class="card__text">
+              <blockquote class="mb-0">
+                <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.
+                </p>
+                <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Quotes de companies 2 -->
+          <div class="col-sm-10 col-md-5 p-2 my-2 cardDonate">
+            <img src="../img/recycling-actions.png" class="card-img-top" alt="Recycling plastic">
+            <h2 class="card__title">Afrikrea, an Ivorian startup</h2>
+            <div class="card__text">
+              <blockquote class="mb-0">
+                <p>We raised a $6.2 million pre-Series A. All thanks to our first doners, now our stakeholders, no doubt.
+                </p>
+                <footer class="blockquote-footer">Jordan Lebron, CEO of Ankar <cite title="Source Title">TED talks</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </sections>
+  </main>
+  <!-- ProjectsAdd -->
+  <div class="projectsAdd">
+    <h2>Projects</h2>
+    <p>Thanks to our partners we can clean the oceans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui
+      esse cum sit voluptate, numquam veniam dolores, commodi porro quas corporis nat</p>
+    <a href="projects.html"><button class="buttonAdd">Learn more</button></a>
+  </div>
+  <!-- NewsAdd -->
+  <div class="newsAdd">
+    <h2>News</h2>
+    <p>Read current events articles on sustainable agriculture and sustainable living. Lorem ipsum, dolor sit amet,
+      consectetur adipisicing elit. Nostrum, laudantium distinctio error iusto dolor et, fugiat! Error, obcaeca</p>
+    <a href="news.html"><button class="buttonAdd">Read</button></a>
+  </div>
+  <!-- footer -->
+  <footer class="conteiner pie">
+
+    <!-- nav del footer -->
+    <ul class="nav flex-column pie__nav col-md-3 col-sm-12 ">
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="donate.html">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="talk_to_us.html">Talk to us</a>
+      </li>
+    </ul>
+
+    <div class="col-md-3 col-sm-12">
+
+      <!-- Titulo footer -->
+      <div class="pie__title">
+        <span class="text-muted">Visit our social media.</span>
+      </div>
+
+      <!-- iconos redes sociales -->
+      <div class="pie__icon">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../img/instagram-actions.png" alt=" Instagram Actions">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="../img/twitter-actions.png" alt="Twitter Actions">
+        </a>
+        <a href="https://discord.com" target="_blank">
+          <img src="../img/discord-actions.png" alt="Discord Actions">
+        </a>
+      </div>
+
     </div>
-    <!-- footer -->
-    <footer class="conteiner pie">
 
-      <!-- nav del footer -->
-      <ul class="nav flex-column pie__nav col-md-3 col-sm-12 ">
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="donate.html">Donate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="talk_to_us.html">Talk to us</a>
-        </li>
-      </ul>
+    <div class="col-md-3 col-sm-12">
 
-      <div class="col-md-3 col-sm-12">
-
-        <!-- Titulo footer -->
-        <div class="pie__title">
-          <span class="text-muted">Visit our social media.</span>
-        </div>
-
-        <!-- iconos redes sociales -->
-        <div class="pie__icon">
-          <a href="https://www.instagram.com" target="_blank">
-            <img src="../img/instagram-actions.png" alt=" Instagram Actions">
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img src="../img/twitter-actions.png" alt="Twitter Actions">
-          </a>
-          <a href="https://discord.com" target="_blank">
-            <img src="../img/discord-actions.png" alt="Discord Actions">
-          </a>
-        </div>
-
+      <!-- logo del footer -->
+      <div class="pie__logo">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-actions.png" alt="Actions logo">
+        </a>
       </div>
-        
-      <div class="col-md-3 col-sm-12">
 
-        <!-- logo del footer -->
-        <div class="pie__logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/logo-actions.png" alt="Actions logo">
-          </a>
-        </div>
+      <!-- copy del footer -->
+      <p class="pie__copy">© 2022 Actions, Inc</p>
 
-        <!-- copy del footer -->
-        <p class="pie__copy">© 2022 Actions, Inc</p>
+    </div>
+  </footer>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
-      </div>
-    </footer>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-  </body>
+</body>
 
 </html>
