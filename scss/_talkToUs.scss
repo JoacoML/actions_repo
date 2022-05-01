@@ -1,6 +1,5 @@
 	/*Talk to us*/
 .talkToUsGrid{
-	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto auto;
@@ -10,16 +9,11 @@
 						"newsAdd"
 						"pie";
 	.talkToUsContent{
+		margin-top: 11rem;
 		grid-area: talkToUsContent;
-		width: 100%;
-		@include flexContent(column, space-evenly, center);
+		background-color: map-get($map:$paleta,$key:'lightblue');
 		.sectionTalkToUs{
-			width: 100%;
-			height: 100vh;
-			background-color: map-get($map:$paleta,$key:'lightblue');
-			@include flexContent(column, space-evenly, center);
 			.talkToUs__title--xl{
-				margin-top: 7rem;
 				@include text($textXL, auto, center, $lightColor);
 			}
 			.talkToUs__title--m{
@@ -30,11 +24,7 @@
 			}
 		}
 		.sectionIdeas{
-			width: 100%;
-			height: auto;
-			@include flexContent(column, center, center);
 			.sectionIdeas__title--xl{
-				padding: 1rem 3rem;
 				animation-name: textAlpha;
 				animation-duration: 2s;
 				@include text($textXL, auto, center, $lightColor);
@@ -67,22 +57,41 @@
 						color: $lightColor;
 					}
 				}
-				@media (min-width: 768px){
-					width: 50%;
-				}
 			}
 		}
 		.advisorContact{
-			width: 100%;
-			height: 100vh;
 			background-color: map-get($map:$paleta,$key:'lightblue');
-			@include flexContent(column, space-evenly, center);
 			.advisorContact__title--xl{
-				margin-top: 7rem;
 				@include text($textXL, auto, center, $lightColor);
 			}
 			.advisorContact__title--m{
 				@include text($textS, auto, center, $lightColor);
+			}
+			.sectionAdvisor__form{
+				width: 80%;
+				margin: 3rem;
+				padding: 1rem;
+				background-color: map-get($map:$paleta,$key:'darkblue');
+				border: solid 3px white;
+				@include flexContent(column, space-around, all);
+				legend{
+					color: brown;
+				}
+				label{
+					@include text($textS, auto, left, $lightColor);
+				}
+				.buttonForm{
+					@extend %button;
+					background-color: whitesmoke;
+					color: $darkColor;
+					margin: 1rem;
+					transition: all 0.7s;
+					&:hover{
+						transform: scale(1.2);
+						background-color: map-get($map:$paleta,$key:'darkblue');
+						color: $lightColor;
+					}
+				}
 			}
 		}
 	}
@@ -93,19 +102,5 @@
 							"talkToUsContent talkToUsContent"
 							"projectsAdd newsAdd"
 							"pie pie";
-	}
-	.projectsAdd{
-		@media (min-width: 768px){
-			height: auto;
-			padding-top: 3rem;
-			padding-bottom: 1rem;
-		}
-	}
-	.newsAdd{
-		@media (min-width: 768px){
-			height: auto;
-			padding-top: 3rem;
-			padding-bottom: 1rem;
-		}
 	}
 }
