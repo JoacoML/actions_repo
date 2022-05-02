@@ -211,7 +211,7 @@ html {
     align-items: center; }
     .projectsGrid .projectsContent .projects__title--xl {
       margin: 2rem auto;
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
       animation-name: textAlpha;
       animation-duration: 2s;
       font-size: 5rem;
@@ -219,11 +219,16 @@ html {
       text-align: center;
       color: white; }
     .projectsGrid .projectsContent .projects__text--xl {
+      border-top: solid 2px white;
       margin: 1rem;
+      padding: 1rem;
       font-size: 1.7rem;
       line-height: "";
       text-align: center;
       color: white; }
+      .projectsGrid .projectsContent .projects__text--xl span {
+        text-transform: uppercase;
+        color: #1E5096; }
     .projectsGrid .projectsContent .projects__card {
       display: flex;
       flex-direction: column;
@@ -278,22 +283,28 @@ html {
     justify-content: space-evenly;
     align-items: center; }
     .projectsGrid .donateAdd h2 {
+      padding: 1rem;
       font-size: 3rem;
       line-height: auto;
       text-align: center;
       color: white; }
     .projectsGrid .donateAdd p {
-      font-size: 1.5rem;
+      margin: auto 1.5rem;
+      font-size: 1.7rem;
       line-height: auto;
-      text-align: center;
-      color: black; }
+      text-align: start;
+      color: white; }
     .projectsGrid .donateAdd a {
       width: 100%;
       text-decoration: none;
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      flex-direction: row;
+      justify-content: flex-end;
       align-items: center; }
+      .projectsGrid .donateAdd a .buttonAdd {
+        color: white;
+        width: 30%;
+        background-color: #1E5096; }
   @media (min-width: 768px) {
     .projectsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -312,13 +323,8 @@ html {
     width: 100%;
     height: auto;
     padding-top: 10rem;
-    background-color: #5AC7FA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-color: #5AC7FA; }
     .newsGrid .newsContent .news__title--xl {
-      margin: 2rem auto;
       padding: 1rem 3rem;
       animation-name: textAlpha;
       animation-duration: 2s;
@@ -327,57 +333,76 @@ html {
       text-align: center;
       color: white; }
     .newsGrid .newsContent .news__text--xl {
+      border-top: solid 2px white;
       margin: 1rem;
+      padding: 1rem;
       font-size: 1.7rem;
       line-height: "";
       text-align: center;
       color: white; }
-    .newsGrid .newsContent .news__box {
-      width: auto;
-      flex-wrap: wrap;
+      .newsGrid .newsContent .news__text--xl span {
+        text-transform: uppercase;
+        color: #1E5096; }
+    .newsGrid .newsContent .news__box .articleNews {
+      margin: 0.7rem 1.5rem;
+      border: solid 0.3rem white;
+      border-radius: 5px;
+      transition: all 0.7s;
+      background-color: #469CE3;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center; }
-      .newsGrid .newsContent .news__box .articleNews {
-        margin: 0.7rem 1.5rem;
-        border: solid 0.3rem white;
-        border-radius: 5px;
-        transition: all 0.7s;
-        background-color: #469CE3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
-        .newsGrid .newsContent .news__box .articleNews a {
-          text-decoration: none; }
-          .newsGrid .newsContent .news__box .articleNews a .article__title {
-            font-size: 2rem;
-            line-height: auto;
-            text-align: left;
-            color: white;
-            padding-bottom: 0.3rem;
-            border-bottom: solid 2px white;
-            margin: 1rem; }
-            .newsGrid .newsContent .news__box .articleNews a .article__title:hover {
-              color: #1E5096;
-              border-bottom: solid 2px darkblue; }
-          .newsGrid .newsContent .news__box .articleNews a .article__text {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            text-align: left;
-            color: white;
-            margin: 1rem; }
-            .newsGrid .newsContent .news__box .articleNews a .article__text:hover {
-              color: #1E5096; }
-          .newsGrid .newsContent .news__box .articleNews a .card-footer {
-            text-decoration: none;
-            font-size: 1rem;
-            line-height: auto;
-            text-align: left;
-            color: white; }
-        .newsGrid .newsContent .news__box .articleNews:hover {
-          transform: scale(1.02); }
+      .newsGrid .newsContent .news__box .articleNews a {
+        text-decoration: none; }
+        .newsGrid .newsContent .news__box .articleNews a .article__title {
+          font-size: 2rem;
+          line-height: auto;
+          text-align: left;
+          color: white;
+          padding-bottom: 0.3rem;
+          border-bottom: solid 2px white;
+          margin: 1rem; }
+          .newsGrid .newsContent .news__box .articleNews a .article__title:hover {
+            color: #1E5096;
+            border-bottom: solid 2px darkblue; }
+        .newsGrid .newsContent .news__box .articleNews a .article__text {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          text-align: left;
+          color: white;
+          margin: 1rem; }
+          .newsGrid .newsContent .news__box .articleNews a .article__text:hover {
+            color: #1E5096; }
+        .newsGrid .newsContent .news__box .articleNews a .card-footer {
+          text-decoration: none;
+          font-size: 1rem;
+          line-height: auto;
+          text-align: left;
+          color: white; }
+      .newsGrid .newsContent .news__box .articleNews:hover {
+        transform: scale(1.02); }
+    .newsGrid .newsContent .news__box .cardNews {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .newsGrid .newsContent .news__box .cardNews img {
+        width: 85%; }
+      .newsGrid .newsContent .news__box .cardNews h2 {
+        font-size: 1.5rem;
+        line-height: auto;
+        text-align: center;
+        color: white;
+        margin: 1rem; }
+      .newsGrid .newsContent .news__box .cardNews p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        color: white;
+        margin: 0.5rem; }
+      .newsGrid .newsContent .news__box .cardNews:hover {
+        transform: scale(1.02); }
   .newsGrid .newsPodcast {
     grid-area: newsPodcast;
     width: 100%;
@@ -395,9 +420,6 @@ html {
       text-align: center;
       color: white;
       padding: 1rem; }
-  @media (min-width: 768px) {
-    .newsGrid .projectsAdd {
-      height: auto; } }
   @media (min-width: 768px) {
     .newsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -427,7 +449,12 @@ html {
       font-size: 1.7rem;
       line-height: auto;
       text-align: center;
-      color: white; }
+      color: white;
+      border-top: solid 2px white;
+      margin: 1rem;
+      padding: 1rem; }
+      .donateGrid .donateContent .donate__text--xl span {
+        color: #1E5096; }
     .donateGrid .donateContent .sectionDonation .sectionDonation__form {
       border: solid 3px white;
       background-color: #1E5096;

@@ -21,6 +21,12 @@
 		}
 		.donate__text--xl{
 			@include text(1.7rem, auto, center, $lightColor);
+			border-top: solid 2px $lightColor;
+			margin: 1rem;
+			padding: 1rem;
+			span{
+				color: map-get($map:$paleta,$key:'darkblue');
+			}
 		}
 		.sectionDonation{
 			.sectionDonation__form{

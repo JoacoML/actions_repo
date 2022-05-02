@@ -18,14 +18,20 @@
 		@include flexContent(column, center, center);
 		.projects__title--xl{
 			margin: 2rem auto;
-			padding: 1rem 3rem;
+			padding: 1rem 2rem;
 			animation-name: textAlpha;
 			animation-duration: 2s;
 			@include text($textXL, auto, center, $lightColor);
 		}
 		.projects__text--xl{
+			border-top: solid 2px $lightColor;
 			margin: 1rem;
+			padding: 1rem;
 			@include text(1.7rem, "", center, $lightColor);
+			span{
+				text-transform: uppercase;
+				color: map-get($map:$paleta,$key:'darkblue');
+			}
 		}
 		.projects__card{
 			@include flexContent(column, center, center);
@@ -73,17 +79,22 @@
 		height: 30vh;
 		@include flexContent(column, space-evenly, center);
 		h2{
+			padding: 1rem;
 			@include text($textM, auto, center, $lightColor);
 		}
 		p{
-			@include text($textS, auto, center, $darkColor);
+			margin: auto 1.5rem;
+			@include text(1.7rem, auto, start, $lightColor);
 		}
 		a{
 			width: 100%;
 			text-decoration: none;
-			@include flexContent(column, space-evenly, center);
+			@include flexContent(row, flex-end, center);
 			.buttonAdd{
 				@extend %button;
+				color: $lightColor;
+				width: 30%;
+				background-color: map-get($map:$paleta,$key:'darkblue');
 			}
 		}
 	}
