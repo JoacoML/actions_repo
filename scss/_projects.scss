@@ -13,9 +13,6 @@
 		grid-area: projectsContent;
 		padding-top: 10rem;
 		background-color: map-get($map:$paleta,$key:'lightblue');
-		background-attachment: fixed;
-		flex-wrap: wrap;
-		@include flexContent(column, center, center);
 		.projects__title--xl{
 			margin: 2rem auto;
 			padding: 1rem 2rem;
@@ -50,7 +47,6 @@
 					}
 				}
 				.card__title{
-					display: inline;
 					@include text($textM, auto, start, $lightColor);
 					margin: 1rem
 				}
