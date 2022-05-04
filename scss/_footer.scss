@@ -4,6 +4,8 @@
 	background-color: rgba(222, 218, 218, 0.835);
 
 	.pie__nav{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 		a{
 			@include text(1.7rem, auto, center, map-get($map:$paleta,$key:'dark'));
 			text-decoration: none;

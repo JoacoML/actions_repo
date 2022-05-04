@@ -17,15 +17,15 @@
 		.sectionHome{
 			.carousel{
 				.carousel-inner{
-					width: 100%;
-					
 					img{
-						object-fit: cover;
 					}
 				}
-				.text-carousel {
-					margin-top: 80vh;
-					@include text($textXL, 7rem, center, $lightColor);
+				.text-carousel{
+					@include text(4rem, "", center, $lightColor);
+					background-color: map-get($map:$paleta,$key:'black-shw');
+					margin-bottom: 5rem;
+					padding: 1rem;
+					border-radius: 20px;
 					animation-name: textAlpha;
 					animation-duration: 3s;
 					@keyframes textAlpha{
@@ -34,30 +34,22 @@
 					}
 					span{
 						text-transform: uppercase;
-						background-color: map-get($map:$paleta,$key:'black-shw');
-						border-radius: 40rem;
-						font-size: 4rem;
 						padding: 1rem;
 					}
 				}
 			}
-			
 		}
 		.sectionAboutUs{
 			padding-top: 2rem;
-			flex-wrap: wrap;
 			.aboutUs__text--xl{
 				margin: 1rem;
 				padding: 1rem;
 				@include text(1.7rem, "", center, $lightColor);
 				span{
 					text-transform: uppercase;
-					color: map-get($map:$paleta,$key:'darkblue');
+					color: map-get($map:$paleta,$key:'dark');
 				}
 			}
-			.tarjetas {
-			max-width: 1140px;
-			margin: auto;}
 			.aboutUs__card{
 				border-top: 2px solid lighten(map-get($map:$paleta,$key:'superlight'),40%);
 				padding: 2rem;
@@ -99,19 +91,18 @@
 .projectsAdd{
 	grid-area: projectsAdd;
 	background-color: map-get($map:$paleta,$key:'darkblue');
-	margin: 2rem 3rem 2rem 10rem;
+	margin: 2rem 15% 2rem 10%;
+	width: 80%;
 	border: 3px solid rgb(162, 159, 159);
 	border-radius: 50px;
-	@include flexContent(column, space-evenly, center);
+	@include flexContent(column, "", center);
 	h2{
 		padding: 1rem;
 		@include text($textM, auto, center, $lightColor);
 	}
 	p{
-		margin: auto 10rem;
-		text-align: center;
+		padding: 1rem;
 		@include text(1.7rem, auto, center, $lightColor);
-	
 	}
 	a{
 		width: 100%;
@@ -131,16 +122,18 @@
 .newsAdd{
 	grid-area: newsAdd;
 	background-color: map-get($map:$paleta,$key:'blue');
-	margin: 2rem 10rem 2rem 3rem;
+	margin: 2rem;
+	margin: 2rem 15% 2rem 10%;
 	border: 3px solid rgb(162, 159, 159);;
 	border-radius: 50px;
-	@include flexContent(column, space-evenly, center);
+	width: 80%;
+	@include flexContent(column, center , center);
 	h2{
 		padding: 1rem;
 		@include text($textM, auto, center, $lightColor);
 	}
 	p{
-		margin: auto 10rem;
+		padding: 1rem;
 		@include text(1.7rem, auto, center, $lightColor);
 	}
 	a{

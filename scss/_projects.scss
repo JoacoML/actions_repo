@@ -69,17 +69,17 @@
 	.donateAdd{
 		background-color: map-get($map:$paleta,$key:'darkblue');
 		grid-area: donateAdd;
-		margin: 2rem 3rem 2rem 10rem;
-	border: 3px solid rgb(162, 159, 159);
-	border-radius: 50px;
-		height: 30vh;
+		margin: 2rem 15% 2rem 10%;
+		width: 80%;
+		border: 3px solid rgb(162, 159, 159);
+		border-radius: 50px;
 		@include flexContent(column, space-evenly, center);
 		h2{
 			padding: 1rem;
 			@include text($textM, auto, center, $lightColor);
 		}
 		p{
-			margin: auto 10rem;
+			padding: 1rem;
 			@include text(1.7rem, auto, center, $lightColor);
 		}
 		a{

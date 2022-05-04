@@ -80,12 +80,12 @@
 					transition: all 0.7s;
 					@include text($textS, auto, center, $darkColor);
 					.card__title{
-						@include text(2rem, auto, start, map-get($map:$paleta,$key:'blue'));
+						@include text(2rem, auto, start, map-get($map:$paleta,$key:'darkblue'));
 					}
 					.card__text{
-						@include text($textS, auto, start, map-get($map:$paleta,$key:'blue'));
+						@include text(1.7rem, auto, start, map-get($map:$paleta,$key:'darkblue'));
 						footer{
-							@include text(1rem, auto, start, map-get($map:$paleta,$key:'blue'));
+							@include text(1.5rem, auto, start, map-get($map:$paleta,$key:'darkblue'));
 							margin-left: 7rem;
 						}
 					}

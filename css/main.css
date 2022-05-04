@@ -14,7 +14,7 @@ html {
   padding: 0.3rem;
   border-color: #FFFEFF;
   border-radius: 5px;
-  background-color: #e3feff14;
+  background-color: rgba(179, 208, 211, 0.398);
   text-align: center;
   font-size: 1.5rem;
   text-decoration: none;
@@ -22,7 +22,7 @@ html {
   transition: all 0.7s; }
   .projectsAdd a .buttonAdd:hover, .newsAdd a .buttonAdd:hover, .projectsGrid .projectsContent .projects__card .card .buttonCard:hover, .projectsGrid .donateAdd a .buttonAdd:hover, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
     transform: scale(1.1);
-    background-color: #e3feff14;
+    background-color: rgba(179, 208, 211, 0.398);
     color: white; }
 
 .botonera {
@@ -56,16 +56,15 @@ html {
     justify-content: center;
     align-items: all;
     margin-top: 12vh; }
-    .homeGrid .homeContent .sectionHome .carousel .carousel-inner {
-      width: 100%; }
-      .homeGrid .homeContent .sectionHome .carousel .carousel-inner img {
-        object-fit: cover; }
     .homeGrid .homeContent .sectionHome .carousel .text-carousel {
-      margin-top: 80vh;
-      font-size: 5rem;
-      line-height: 7rem;
+      font-size: 4rem;
+      line-height: "";
       text-align: center;
       color: white;
+      background-color: rgba(2, 12, 43, 0.95);
+      margin-bottom: 5rem;
+      padding: 1rem;
+      border-radius: 20px;
       animation-name: textAlpha;
       animation-duration: 3s; }
 
@@ -76,13 +75,9 @@ html {
     opacity: 1; } }
       .homeGrid .homeContent .sectionHome .carousel .text-carousel span {
         text-transform: uppercase;
-        background-color: rgba(2, 12, 43, 0.95);
-        border-radius: 40rem;
-        font-size: 4rem;
         padding: 1rem; }
     .homeGrid .homeContent .sectionAboutUs {
-      padding-top: 2rem;
-      flex-wrap: wrap; }
+      padding-top: 2rem; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl {
         margin: 1rem;
         padding: 1rem;
@@ -92,12 +87,9 @@ html {
         color: white; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl span {
           text-transform: uppercase;
-          color: #1E5096; }
-      .homeGrid .homeContent .sectionAboutUs .tarjetas {
-        max-width: 1140px;
-        margin: auto; }
+          color: #020301; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
-        border-top: 2px solid rgba(255, 255, 255, 0.0784314);
+        border-top: 2px solid rgba(255, 255, 255, 0.398);
         padding: 2rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__title {
           font-size: 3rem;
@@ -117,7 +109,7 @@ html {
           color: white;
           margin: 1rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
-          background-color: rgba(255, 255, 255, 0.0784314); }
+          background-color: rgba(255, 255, 255, 0.398); }
           .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
@@ -137,12 +129,13 @@ html {
 .projectsAdd {
   grid-area: projectsAdd;
   background-color: #1E5096;
-  margin: 2rem 3rem 2rem 10rem;
+  margin: 2rem 15% 2rem 10%;
+  width: 80%;
   border: 3px solid #a29f9f;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: "";
   align-items: center; }
   .projectsAdd h2 {
     padding: 1rem;
@@ -151,8 +144,7 @@ html {
     text-align: center;
     color: white; }
   .projectsAdd p {
-    margin: auto 10rem;
-    text-align: center;
+    padding: 1rem;
     font-size: 1.7rem;
     line-height: auto;
     text-align: center;
@@ -174,12 +166,14 @@ html {
 .newsAdd {
   grid-area: newsAdd;
   background-color: #469CE3;
-  margin: 2rem 10rem 2rem 3rem;
+  margin: 2rem;
+  margin: 2rem 15% 2rem 10%;
   border: 3px solid #a29f9f;
   border-radius: 50px;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center; }
   .newsAdd h2 {
     padding: 1rem;
@@ -188,7 +182,7 @@ html {
     text-align: center;
     color: white; }
   .newsAdd p {
-    margin: auto 10rem;
+    padding: 1rem;
     font-size: 1.7rem;
     line-height: auto;
     text-align: center;
@@ -283,10 +277,10 @@ html {
   .projectsGrid .donateAdd {
     background-color: #1E5096;
     grid-area: donateAdd;
-    margin: 2rem 3rem 2rem 10rem;
+    margin: 2rem 15% 2rem 10%;
+    width: 80%;
     border: 3px solid #a29f9f;
     border-radius: 50px;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -298,7 +292,7 @@ html {
       text-align: center;
       color: white; }
     .projectsGrid .donateAdd p {
-      margin: auto 10rem;
+      padding: 1rem;
       font-size: 1.7rem;
       line-height: auto;
       text-align: center;
@@ -334,7 +328,6 @@ html {
   grid-template-areas: "botonera" "newsContent" "newsPodcast" "projectsAdd" "pie"; }
   .newsGrid .newsContent {
     grid-area: newsContent;
-    height: auto;
     padding-top: 10rem; }
     .newsGrid .newsContent .news__title--xl {
       padding: 1rem 3rem;
@@ -401,11 +394,11 @@ html {
             text-align: left;
             color: #FFFEFF; }
       .newsGrid .newsContent .news__box .cardNews {
-        width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        width: 85%;
         border: solid 0.3rem #FFFEFF;
         border-radius: 5px;
         margin-left: 2.3rem;
@@ -414,13 +407,13 @@ html {
         .newsGrid .newsContent .news__box .cardNews img {
           width: 100%; }
         .newsGrid .newsContent .news__box .cardNews h2 {
-          font-size: 1.5rem;
+          font-size: 2rem;
           line-height: auto;
           text-align: center;
           color: #FFFEFF;
-          margin: 1rem; }
+          margin: 0.5rem; }
         .newsGrid .newsContent .news__box .cardNews p {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           line-height: 2rem;
           text-align: center;
           color: #FFFEFF;
@@ -430,18 +423,17 @@ html {
             margin-top: 7rem; } }
   .newsGrid .newsPodcast {
     grid-area: newsPodcast;
-    width: 100%;
+    width: 80%;
     background-color: #006090;
-    margin: 2rem 3rem 2rem 10rem;
+    margin: 2rem 15% 2rem 10%;
     border: 3px solid #a29f9f;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: auto; }
+    align-items: center; }
     .newsGrid .newsPodcast iframe {
-      width: 100%; }
+      object-fit: fill; }
     .newsGrid .newsPodcast .podcast__title {
       font-size: 3rem;
       line-height: auto;
@@ -499,7 +491,7 @@ html {
         font-size: 1.7rem; }
         .donateGrid .donateContent .sectionDonation .sectionDonation__form fieldset legend {
           font-size: 1.7rem;
-          color: #5AC7FA;
+          color: rgba(103, 212, 222, 0.9);
           margin-left: 2rem; }
         .donateGrid .donateContent .sectionDonation .sectionDonation__form fieldset label {
           padding: 2px; }
@@ -522,7 +514,7 @@ html {
     .donateGrid .donateContent .sectionDonation .donate__quotes {
       justify-content: space-evenly; }
       .donateGrid .donateContent .sectionDonation .donate__quotes .cardDonate {
-        background-color: #e3feff14;
+        background-color: rgba(179, 208, 211, 0.398);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         transition: all 0.7s;
@@ -534,17 +526,17 @@ html {
           font-size: 2rem;
           line-height: auto;
           text-align: start;
-          color: #469CE3; }
+          color: #1E5096; }
         .donateGrid .donateContent .sectionDonation .donate__quotes .cardDonate .card__text {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           line-height: auto;
           text-align: start;
-          color: #469CE3; }
+          color: #1E5096; }
           .donateGrid .donateContent .sectionDonation .donate__quotes .cardDonate .card__text footer {
-            font-size: 1rem;
+            font-size: 1.5rem;
             line-height: auto;
             text-align: start;
-            color: #469CE3;
+            color: #1E5096;
             margin-left: 7rem; }
         .donateGrid .donateContent .sectionDonation .donate__quotes .cardDonate:hover {
           transform: scale(1.01); }
@@ -699,12 +691,15 @@ html {
 .pie {
   grid-area: pie;
   background-color: rgba(222, 218, 218, 0.835); }
-  .pie .pie__nav a {
-    font-size: 1.7rem;
-    line-height: auto;
-    text-align: center;
-    color: #020301;
-    text-decoration: none; }
+  .pie .pie__nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .pie .pie__nav a {
+      font-size: 1.7rem;
+      line-height: auto;
+      text-align: center;
+      color: #020301;
+      text-decoration: none; }
   .pie .pie__title {
     font-size: 2rem;
     line-height: auto;

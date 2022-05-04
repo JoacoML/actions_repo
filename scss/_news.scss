@@ -14,7 +14,6 @@
 						"pie";
 	.newsContent{
 		grid-area: newsContent;
-		height: auto;
 		padding-top: 10rem;
 		.news__title--xl{
 			padding: 1rem 3rem;
@@ -68,8 +67,8 @@
 				}
 			}
 			.cardNews{
-				width: 85%;
 				@include flexContent(column, space-evenly, center);
+				width: 85%;
 				border: solid 0.3rem map-get($map:$paleta,$key:'white');
 				border-radius: 5px;
 				margin-left: 2.3rem;
@@ -79,11 +78,11 @@
 					width: 100%;
 				}
 				h2{
-					@include text(1.5rem, auto, center, map-get($map:$paleta,$key:'white'));
-					margin: 1rem;
+					@include text(2rem, auto, center, map-get($map:$paleta,$key:'white'));
+					margin: 0.5rem;
 				}
 				p{
-					@include text($textS, 2rem, center, map-get($map:$paleta,$key:'white'));
+					@include text(1.7rem, 2rem, center, map-get($map:$paleta,$key:'white'));
 					margin: 0.5rem;
 				}
 		
@@ -95,15 +94,14 @@
 	}
 	.newsPodcast{
 		grid-area: newsPodcast;
-		width: 100%;
+		width: 80%;
 		background-color: #006090;
-		margin: 2rem 3rem 2rem 10rem;
+		margin: 2rem 15% 2rem 10%;
 		border: 3px solid rgb(162, 159, 159);
 		border-radius: 50px;
 		@include flexContent(column, center, center);
-		height: auto;
 		iframe{
-			width: 100%;
+			object-fit: fill
 		}
 		.podcast__title{
 			@include text($textM, auto, center, $lightColor);
