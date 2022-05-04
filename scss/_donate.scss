@@ -1,6 +1,9 @@
 	/*Donate*/
 .donateGrid{
 	width: 100vw;
+	background-image: url(../img/Fondo-4.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto auto;
@@ -12,7 +15,6 @@
 	.donateContent{
 		grid-area: donateContent;
 		padding-top: 12rem;
-		background-color: map-get($map:$paleta,$key:'lightblue');
 		.donate__title--xl{
 			padding: 1rem 3rem;
 			animation-name: textAlpha;

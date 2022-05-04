@@ -1,7 +1,8 @@
 	/*Footer*/
 .pie{
 	grid-area: pie;
-	background-color: map-get($map:$paleta,$key:'white');
+	background-color: rgba(222, 218, 218, 0.835);
+
 	.pie__nav{
 		a{
 			@include text(1.7rem, auto, center, map-get($map:$paleta,$key:'dark'));
@@ -15,8 +16,8 @@
 	.pie__logo{
 		@include flexContent(row, space-around, center);
 		img{
-			border: solid 2px whitesmoke;
 			width: 18rem;
+			border-radius: 30px
 		}
 	}
 	.pie__icon{

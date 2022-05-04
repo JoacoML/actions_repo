@@ -1,5 +1,8 @@
 	/*Talk to us*/
 .talkToUsGrid{
+	background-image: url(../img/Fondo-4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto auto;
@@ -11,19 +14,29 @@
 	.talkToUsContent{
 		margin-top: 11rem;
 		grid-area: talkToUsContent;
-		background-color: map-get($map:$paleta,$key:'lightblue');
+	
 		.sectionTalkToUs{
 			.talkToUs__title--xl{
+				padding: 1rem 3rem;
+				animation-name: textAlpha;
+				animation-duration: 2s;
 				@include text($textXL, auto, center, $lightColor);
 			}
 			.talkToUs__title--m{
-				@include text($textS, auto, center, $lightColor);
+				@include text(1.7rem, auto, center, $lightColor);
+				border-top: solid 2px $lightColor;
+				margin: 1rem;
+				padding: 1rem;
+				span{
+					color: map-get($map:$paleta,$key:'darkblue');
+				}
 			}
 			iframe{
 				width: 80%;
 			}
 		}
 		.sectionIdeas{
+
 			.sectionIdeas__title--xl{
 				animation-name: textAlpha;
 				animation-duration: 2s;
@@ -31,6 +44,13 @@
 			}
 			.sectionIdeas__text--xl{
 				@include text(1.7rem, auto, center, $lightColor);
+				border-bottom: solid 2px $lightColor;
+				margin: 1rem;
+				padding: 1rem;
+				span{
+					color: map-get($map:$paleta,$key:'darkblue');
+				}
+			
 			}
 			.sectionIdeas__form{
 				width: 80%;
@@ -58,14 +78,33 @@
 					}
 				}
 			}
+			.cardTalkToUs{
+				border-radius: 10px;
+				transition: all 0.7s;
+				@include text($textS, auto, center, $darkColor);
+				.card__title{
+					@include text(2rem, auto, center, map-get($map:$paleta,$key:'white'));
+				}
+				.card__text{
+					@include text($textS, auto, center, map-get($map:$paleta,$key:'white'));
+				}
+				&:hover{
+					transform: scale(1.01);
+				}
+			}
 		}
 		.advisorContact{
-			background-color: map-get($map:$paleta,$key:'lightblue');
 			.advisorContact__title--xl{
 				@include text($textXL, auto, center, $lightColor);
 			}
-			.advisorContact__title--m{
-				@include text($textS, auto, center, $lightColor);
+			.advisorContact__text{
+				@include text(1.7rem, auto, center, $lightColor);
+				border-bottom: solid 2px $lightColor;
+				margin: 1rem;
+				padding: 1rem;
+				span{
+					color: map-get($map:$paleta,$key:'darkblue');
+				}
 			}
 			.sectionAdvisor__form{
 				width: 80%;

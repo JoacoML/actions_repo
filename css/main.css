@@ -14,7 +14,7 @@ html {
   padding: 0.3rem;
   border-color: #FFFEFF;
   border-radius: 5px;
-  background-color: #E3FEFF;
+  background-color: #e3feff14;
   text-align: center;
   font-size: 1.5rem;
   text-decoration: none;
@@ -22,24 +22,28 @@ html {
   transition: all 0.7s; }
   .projectsAdd a .buttonAdd:hover, .newsAdd a .buttonAdd:hover, .projectsGrid .projectsContent .projects__card .card .buttonCard:hover, .projectsGrid .donateAdd a .buttonAdd:hover, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
     transform: scale(1.1);
-    background-color: #1E5096;
+    background-color: #e3feff14;
     color: white; }
 
 .botonera {
-  grid-area: botonera;
   background-color: #FFFEFF;
-  /* Logo Home */
-  /* Lista accesos */ }
-  .botonera .botonera__logo {
-    width: 18rem;
-    border: solid 2px whitesmoke; }
-  .botonera .botonera__lista {
-    margin: 0.5rem;
-    padding: 1rem; }
-    .botonera .botonera__lista a {
-      font-size: 1.5rem; }
+  grid-area: botonera; }
+  .botonera .botonera-desc {
+    max-width: 1140px;
+    margin: auto;
+    /* Logo Home */
+    /* border: solid 2px whitesmoke;*/
+    /* Lista accesos */ }
+    .botonera .botonera-desc .botonera__logo {
+      width: 18rem; }
+    .botonera .botonera-desc .botonera__lista {
+      margin: 0.5rem;
+      padding: 1rem; }
+      .botonera .botonera-desc .botonera__lista a {
+        font-size: 1.5rem; }
 
 .homeGrid {
+  background-color: #536f8e;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -53,35 +57,33 @@ html {
     align-items: all;
     margin-top: 12vh; }
     .homeGrid .homeContent .sectionHome .carousel .carousel-inner {
-      height: 80vh; }
+      width: 100%; }
       .homeGrid .homeContent .sectionHome .carousel .carousel-inner img {
-        height: 80vh; }
-      .homeGrid .homeContent .sectionHome .carousel .carousel-inner .text-carousel {
-        margin-top: 80vh;
-        font-size: 5rem;
-        line-height: 7rem;
-        text-align: center;
-        color: white;
-        animation-name: textAlpha;
-        animation-duration: 3s; }
+        object-fit: cover; }
+    .homeGrid .homeContent .sectionHome .carousel .text-carousel {
+      margin-top: 80vh;
+      font-size: 5rem;
+      line-height: 7rem;
+      text-align: center;
+      color: white;
+      animation-name: textAlpha;
+      animation-duration: 3s; }
 
 @keyframes textAlpha {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-        .homeGrid .homeContent .sectionHome .carousel .carousel-inner .text-carousel span {
-          text-transform: uppercase;
-          background-color: rgba(2, 12, 43, 0.95);
-          border-radius: 40rem;
-          font-size: 4rem;
-          padding: 1rem; }
+      .homeGrid .homeContent .sectionHome .carousel .text-carousel span {
+        text-transform: uppercase;
+        background-color: rgba(2, 12, 43, 0.95);
+        border-radius: 40rem;
+        font-size: 4rem;
+        padding: 1rem; }
     .homeGrid .homeContent .sectionAboutUs {
       padding-top: 2rem;
-      flex-wrap: wrap;
-      background-color: #469CE3; }
+      flex-wrap: wrap; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl {
-        border-top: solid 2px white;
         margin: 1rem;
         padding: 1rem;
         font-size: 1.7rem;
@@ -91,7 +93,11 @@ html {
         .homeGrid .homeContent .sectionAboutUs .aboutUs__text--xl span {
           text-transform: uppercase;
           color: #1E5096; }
+      .homeGrid .homeContent .sectionAboutUs .tarjetas {
+        max-width: 1140px;
+        margin: auto; }
       .homeGrid .homeContent .sectionAboutUs .aboutUs__card {
+        border-top: 2px solid rgba(255, 255, 255, 0.0784314);
         padding: 2rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card .aboutUs__title {
           font-size: 3rem;
@@ -111,7 +117,7 @@ html {
           color: white;
           margin: 1rem; }
         .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) {
-          background-color: #FFFEFF; }
+          background-color: rgba(255, 255, 255, 0.0784314); }
           .homeGrid .homeContent .sectionAboutUs .aboutUs__card:nth-child(2) .aboutUs__title {
             font-size: 3rem;
             line-height: auto;
@@ -131,6 +137,9 @@ html {
 .projectsAdd {
   grid-area: projectsAdd;
   background-color: #1E5096;
+  margin: 2rem 3rem 2rem 10rem;
+  border: 3px solid #a29f9f;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -142,26 +151,32 @@ html {
     text-align: center;
     color: white; }
   .projectsAdd p {
-    margin: auto 1.5rem;
+    margin: auto 10rem;
+    text-align: center;
     font-size: 1.7rem;
     line-height: auto;
-    text-align: start;
+    text-align: center;
     color: white; }
   .projectsAdd a {
     width: 100%;
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; }
     .projectsAdd a .buttonAdd {
       color: white;
       width: 30%;
       background-color: #1E5096; }
+      .projectsAdd a .buttonAdd:hover {
+        background-color: #c20de6; }
 
 .newsAdd {
   grid-area: newsAdd;
   background-color: #469CE3;
+  margin: 2rem 10rem 2rem 3rem;
+  border: 3px solid #a29f9f;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -173,36 +188,38 @@ html {
     text-align: center;
     color: white; }
   .newsAdd p {
-    margin: auto 2rem;
+    margin: auto 10rem;
     font-size: 1.7rem;
     line-height: auto;
-    text-align: start;
+    text-align: center;
     color: white; }
   .newsAdd a {
     width: 100%;
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; }
     .newsAdd a .buttonAdd {
       width: 30%;
       background-color: #469CE3;
       color: white; }
       .newsAdd a .buttonAdd:hover {
-        background-color: #469CE3; }
+        background-color: #e1b35d; }
 
 /* Projects */
 .projectsGrid {
   width: 100vw;
+  background-image: url(../img/Fondo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "botonera" "projectsContent" "donateAdd" "newsAdd" "pie"; }
   .projectsGrid .projectsContent {
     grid-area: projectsContent;
-    padding-top: 10rem;
-    background-color: #5AC7FA; }
+    padding-top: 10rem; }
     .projectsGrid .projectsContent .projects__title--xl {
       margin: 2rem auto;
       padding: 1rem 2rem;
@@ -239,10 +256,6 @@ html {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: start; }
-        .projectsGrid .projectsContent .projects__card .card img {
-          transition: all 0.7s; }
-          .projectsGrid .projectsContent .projects__card .card img:hover {
-            transform: scale(0.95); }
         .projectsGrid .projectsContent .projects__card .card .card__title {
           font-size: 3rem;
           line-height: auto;
@@ -270,6 +283,9 @@ html {
   .projectsGrid .donateAdd {
     background-color: #1E5096;
     grid-area: donateAdd;
+    margin: 2rem 3rem 2rem 10rem;
+    border: 3px solid #a29f9f;
+    border-radius: 50px;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -282,22 +298,24 @@ html {
       text-align: center;
       color: white; }
     .projectsGrid .donateAdd p {
-      margin: auto 1.5rem;
+      margin: auto 10rem;
       font-size: 1.7rem;
       line-height: auto;
-      text-align: start;
+      text-align: center;
       color: white; }
     .projectsGrid .donateAdd a {
       width: 100%;
       text-decoration: none;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center; }
       .projectsGrid .donateAdd a .buttonAdd {
         color: white;
         width: 30%;
         background-color: #1E5096; }
+        .projectsGrid .donateAdd a .buttonAdd:hover {
+          background-color: #0ea90e; }
   @media (min-width: 768px) {
     .projectsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -307,6 +325,9 @@ html {
 /*News*/
 .newsGrid {
   width: 100vw;
+  background-image: url(../img/Fondo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
@@ -314,8 +335,7 @@ html {
   .newsGrid .newsContent {
     grid-area: newsContent;
     height: auto;
-    padding-top: 10rem;
-    background-color: #5AC7FA; }
+    padding-top: 10rem; }
     .newsGrid .newsContent .news__title--xl {
       padding: 1rem 3rem;
       animation-name: textAlpha;
@@ -339,10 +359,9 @@ html {
       padding: 1rem; }
       .newsGrid .newsContent .news__box .articleNews {
         margin: 1rem 2rem;
-        border: solid 0.3rem #469CE3;
+        border: solid 0.3rem #1E5096;
         border-radius: 5px;
-        transition: all 0.7s;
-        background-color: #469CE3;
+        background-color: #1E5096;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -353,15 +372,15 @@ html {
             font-size: 2rem;
             line-height: auto;
             text-align: left;
-            color: #1E5096;
+            color: #d6d6d6;
             padding-bottom: 0.3rem;
-            border-bottom: solid 2px #1E5096;
+            border-bottom: solid 2px #FFFEFF;
             margin: 1rem; }
           .newsGrid .newsContent .news__box .articleNews a .article__text {
             font-size: 1.5rem;
             line-height: 2rem;
             text-align: left;
-            color: #1E5096;
+            color: #FFFEFF;
             margin: 1rem; }
           .newsGrid .newsContent .news__box .articleNews a .card-footer {
             text-decoration: none;
@@ -370,14 +389,12 @@ html {
             text-align: left;
             color: white; }
         .newsGrid .newsContent .news__box .articleNews:hover {
-          transform: scale(1.015);
           border: solid 0.3rem #FFFEFF; }
           .newsGrid .newsContent .news__box .articleNews:hover .article__title {
             font-size: 2rem;
             line-height: auto;
             text-align: left;
-            color: #FFFEFF;
-            border-bottom: solid 2px #FFFEFF; }
+            color: #FFFEFF; }
           .newsGrid .newsContent .news__box .articleNews:hover .article__text {
             font-size: 1.5rem;
             line-height: 2rem;
@@ -389,9 +406,8 @@ html {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        border: solid 0.3rem #469CE3;
+        border: solid 0.3rem #FFFEFF;
         border-radius: 5px;
-        transition: all 0.7s;
         margin-left: 2.3rem;
         margin-top: 1rem;
         margin-bottom: 1rem; }
@@ -401,21 +417,14 @@ html {
           font-size: 1.5rem;
           line-height: auto;
           text-align: center;
-          color: #469CE3;
+          color: #FFFEFF;
           margin: 1rem; }
         .newsGrid .newsContent .news__box .cardNews p {
           font-size: 1.5rem;
           line-height: 2rem;
           text-align: center;
-          color: #469CE3;
+          color: #FFFEFF;
           margin: 0.5rem; }
-        .newsGrid .newsContent .news__box .cardNews:hover {
-          transform: scale(1.02);
-          border: solid 0.3rem #FFFEFF; }
-          .newsGrid .newsContent .news__box .cardNews:hover h2 {
-            color: #FFFEFF; }
-          .newsGrid .newsContent .news__box .cardNews:hover p {
-            color: #FFFEFF; }
         @media (min-width: 991px) {
           .newsGrid .newsContent .news__box .cardNews {
             margin-top: 7rem; } }
@@ -423,6 +432,9 @@ html {
     grid-area: newsPodcast;
     width: 100%;
     background-color: #006090;
+    margin: 2rem 3rem 2rem 10rem;
+    border: 3px solid #a29f9f;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -445,14 +457,16 @@ html {
 /*Donate*/
 .donateGrid {
   width: 100vw;
+  background-image: url(../img/Fondo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "botonera" "donateContent" "projectsAdd" "newsAdd" "pie"; }
   .donateGrid .donateContent {
     grid-area: donateContent;
-    padding-top: 12rem;
-    background-color: #5AC7FA; }
+    padding-top: 12rem; }
     .donateGrid .donateContent .donate__title--xl {
       padding: 1rem 3rem;
       animation-name: textAlpha;
@@ -508,7 +522,7 @@ html {
     .donateGrid .donateContent .sectionDonation .donate__quotes {
       justify-content: space-evenly; }
       .donateGrid .donateContent .sectionDonation .donate__quotes .cardDonate {
-        background-color: #E3FEFF;
+        background-color: #e3feff14;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         transition: all 0.7s;
@@ -542,24 +556,34 @@ html {
 
 /*Talk to us*/
 .talkToUsGrid {
+  background-image: url(../img/Fondo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "botonera" "talkToUsContent" "projectsAdd" "newsAdd" "pie"; }
   .talkToUsGrid .talkToUsContent {
     margin-top: 11rem;
-    grid-area: talkToUsContent;
-    background-color: #5AC7FA; }
+    grid-area: talkToUsContent; }
     .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--xl {
+      padding: 1rem 3rem;
+      animation-name: textAlpha;
+      animation-duration: 2s;
       font-size: 5rem;
       line-height: auto;
       text-align: center;
       color: white; }
     .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--m {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: auto;
       text-align: center;
-      color: white; }
+      color: white;
+      border-top: solid 2px white;
+      margin: 1rem;
+      padding: 1rem; }
+      .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--m span {
+        color: #1E5096; }
     .talkToUsGrid .talkToUsContent .sectionTalkToUs iframe {
       width: 80%; }
     .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__title--xl {
@@ -573,7 +597,12 @@ html {
       font-size: 1.7rem;
       line-height: auto;
       text-align: center;
-      color: white; }
+      color: white;
+      border-bottom: solid 2px white;
+      margin: 1rem;
+      padding: 1rem; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl span {
+        color: #1E5096; }
     .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
       width: 80%;
       margin: 3rem;
@@ -600,44 +629,66 @@ html {
           transform: scale(1.2);
           background-color: #1E5096;
           color: white; }
-    .talkToUsGrid .talkToUsContent .advisorContact {
-      background-color: #5AC7FA; }
-      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
-        font-size: 5rem;
+    .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs {
+      border-radius: 10px;
+      transition: all 0.7s;
+      font-size: 1.5rem;
+      line-height: auto;
+      text-align: center;
+      color: black; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__title {
+        font-size: 2rem;
         line-height: auto;
         text-align: center;
-        color: white; }
-      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--m {
+        color: #FFFEFF; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__text {
         font-size: 1.5rem;
         line-height: auto;
         text-align: center;
+        color: #FFFEFF; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs:hover {
+        transform: scale(1.01); }
+    .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
+      font-size: 5rem;
+      line-height: auto;
+      text-align: center;
+      color: white; }
+    .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text {
+      font-size: 1.7rem;
+      line-height: auto;
+      text-align: center;
+      color: white;
+      border-bottom: solid 2px white;
+      margin: 1rem;
+      padding: 1rem; }
+      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text span {
+        color: #1E5096; }
+    .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form {
+      width: 80%;
+      margin: 3rem;
+      padding: 1rem;
+      background-color: #1E5096;
+      border: solid 3px white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: all; }
+      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form legend {
+        color: brown; }
+      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form label {
+        font-size: 1.5rem;
+        line-height: auto;
+        text-align: left;
         color: white; }
-      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form {
-        width: 80%;
-        margin: 3rem;
-        padding: 1rem;
-        background-color: #1E5096;
-        border: solid 3px white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: all; }
-        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form legend {
-          color: brown; }
-        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form label {
-          font-size: 1.5rem;
-          line-height: auto;
-          text-align: left;
+      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
+        background-color: whitesmoke;
+        color: black;
+        margin: 1rem;
+        transition: all 0.7s; }
+        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
+          transform: scale(1.2);
+          background-color: #1E5096;
           color: white; }
-        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
-          background-color: whitesmoke;
-          color: black;
-          margin: 1rem;
-          transition: all 0.7s; }
-          .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
-            transform: scale(1.2);
-            background-color: #1E5096;
-            color: white; }
   @media (min-width: 768px) {
     .talkToUsGrid {
       grid-template-columns: repeat(2, 1fr);
@@ -647,7 +698,7 @@ html {
 /*Footer*/
 .pie {
   grid-area: pie;
-  background-color: #FFFEFF; }
+  background-color: rgba(222, 218, 218, 0.835); }
   .pie .pie__nav a {
     font-size: 1.7rem;
     line-height: auto;
@@ -666,8 +717,8 @@ html {
     justify-content: space-around;
     align-items: center; }
     .pie .pie__logo img {
-      border: solid 2px whitesmoke;
-      width: 18rem; }
+      width: 18rem;
+      border-radius: 30px; }
   .pie .pie__icon {
     display: flex;
     flex-direction: row;
