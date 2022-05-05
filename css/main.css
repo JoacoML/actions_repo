@@ -55,7 +55,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: all;
-    margin-top: 12vh; }
+    margin-top: 11vh; }
+    .homeGrid .homeContent .sectionHome .carousel .carousel-inner {
+      height: 80vh; }
+      .homeGrid .homeContent .sectionHome .carousel .carousel-inner img {
+        height: 80vh;
+        object-fit: cover; }
     .homeGrid .homeContent .sectionHome .carousel .text-carousel {
       font-size: 4rem;
       line-height: "";

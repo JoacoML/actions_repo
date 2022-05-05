@@ -13,11 +13,14 @@
 	.homeContent{
 		grid-area: homeContent;
 		@include flexContent(column, center, all);
-		margin-top: 12vh;
+		margin-top: 11vh;
 		.sectionHome{
 			.carousel{
 				.carousel-inner{
+					height: 80vh;
 					img{
+						height: 80vh;
+						object-fit: cover;
 					}
 				}
 				.text-carousel{
