@@ -166,7 +166,6 @@ html {
 .newsAdd {
   grid-area: newsAdd;
   background-color: #469CE3;
-  margin: 2rem;
   margin: 2rem 15% 2rem 10%;
   border: 3px solid #a29f9f;
   border-radius: 50px;
@@ -558,7 +557,7 @@ html {
   .talkToUsGrid .talkToUsContent {
     margin-top: 11rem;
     grid-area: talkToUsContent; }
-    .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--xl {
+    .talkToUsGrid .talkToUsContent .talkToUs__title--xl {
       padding: 1rem 3rem;
       animation-name: textAlpha;
       animation-duration: 2s;
@@ -566,7 +565,7 @@ html {
       line-height: auto;
       text-align: center;
       color: white; }
-    .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--m {
+    .talkToUsGrid .talkToUsContent .talkToUs__text--xl {
       font-size: 1.7rem;
       line-height: auto;
       text-align: center;
@@ -574,113 +573,131 @@ html {
       border-top: solid 2px white;
       margin: 1rem;
       padding: 1rem; }
-      .talkToUsGrid .talkToUsContent .sectionTalkToUs .talkToUs__title--m span {
+      .talkToUsGrid .talkToUsContent .talkToUs__text--xl span {
         color: #1E5096; }
-    .talkToUsGrid .talkToUsContent .sectionTalkToUs iframe {
-      width: 80%; }
-    .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__title--xl {
-      animation-name: textAlpha;
-      animation-duration: 2s;
-      font-size: 5rem;
-      line-height: auto;
-      text-align: center;
-      color: white; }
-    .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl {
-      font-size: 1.7rem;
-      line-height: auto;
-      text-align: center;
-      color: white;
-      border-bottom: solid 2px white;
-      margin: 1rem;
-      padding: 1rem; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl span {
-        color: #1E5096; }
-    .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
-      width: 80%;
-      margin: 3rem;
-      padding: 1rem;
-      background-color: #1E5096;
-      border: solid 3px white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: all; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form legend {
-        color: brown; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form label {
-        font-size: 1.5rem;
+    .talkToUsGrid .talkToUsContent .sectionDiscord {
+      align-items: center; }
+      .talkToUsGrid .talkToUsContent .sectionDiscord .talkToUs__title--m {
+        font-size: 1.7rem;
         line-height: auto;
-        text-align: left;
-        color: white; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
-        background-color: whitesmoke;
-        color: black;
+        text-align: center;
+        color: white;
         margin: 1rem;
-        transition: all 0.7s; }
-        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
-          transform: scale(1.2);
-          background-color: #1E5096;
-          color: white; }
-    .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs {
-      border-radius: 10px;
-      transition: all 0.7s;
-      font-size: 1.5rem;
-      line-height: auto;
-      text-align: center;
-      color: black; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__title {
+        padding: 1rem; }
+        .talkToUsGrid .talkToUsContent .sectionDiscord .talkToUs__title--m span {
+          color: #1E5096; }
+      .talkToUsGrid .talkToUsContent .sectionDiscord iframe {
+        margin: auto 10%;
+        width: 80%; }
+    .talkToUsGrid .talkToUsContent .sectionIdeas {
+      align-items: center; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__title--xl {
+        animation-name: textAlpha;
+        animation-duration: 2s;
         font-size: 2rem;
         line-height: auto;
         text-align: center;
-        color: #FFFEFF; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__text {
+        color: white; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl {
+        font-size: 1.7rem;
+        line-height: auto;
+        text-align: center;
+        color: white;
+        margin: 1rem;
+        padding: 1rem; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl span {
+          color: #1E5096; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form {
+        width: 80%;
+        margin: 3rem;
+        padding: 1rem;
+        background-color: #1E5096;
+        border: solid 3px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: all; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form label {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: left;
+          color: white; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form input {
+          font-size: 1.5rem; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
+          background-color: whitesmoke;
+          color: black;
+          margin: 1rem;
+          transition: all 0.7s; }
+          .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
+      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs {
+        margin: 2rem;
+        border-radius: 10px;
+        transition: all 0.7s;
         font-size: 1.5rem;
         line-height: auto;
         text-align: center;
-        color: #FFFEFF; }
-      .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs:hover {
-        transform: scale(1.01); }
-    .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
-      font-size: 5rem;
-      line-height: auto;
-      text-align: center;
-      color: white; }
-    .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text {
-      font-size: 1.7rem;
-      line-height: auto;
-      text-align: center;
-      color: white;
-      border-bottom: solid 2px white;
-      margin: 1rem;
-      padding: 1rem; }
-      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text span {
-        color: #1E5096; }
-    .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form {
-      width: 80%;
-      margin: 3rem;
-      padding: 1rem;
-      background-color: #1E5096;
-      border: solid 3px white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: all; }
-      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form legend {
-        color: brown; }
-      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form label {
-        font-size: 1.5rem;
+        color: black; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__title {
+          font-size: 2rem;
+          line-height: auto;
+          text-align: center;
+          color: #FFFEFF; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs .card__text {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: center;
+          color: #FFFEFF; }
+        .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs:hover {
+          transform: scale(1.01); }
+        @media (min-width: 991px) {
+          .talkToUsGrid .talkToUsContent .sectionIdeas .cardTalkToUs {
+            margin-top: 5rem; } }
+    .talkToUsGrid .talkToUsContent .advisorContact {
+      align-items: center; }
+      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
+        font-size: 2rem;
         line-height: auto;
-        text-align: left;
+        text-align: center;
         color: white; }
-      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
-        background-color: whitesmoke;
-        color: black;
+      .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text {
+        font-size: 1.7rem;
+        line-height: auto;
+        text-align: center;
+        color: white;
         margin: 1rem;
-        transition: all 0.7s; }
-        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
-          transform: scale(1.2);
-          background-color: #1E5096;
+        padding: 1rem; }
+        .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text span {
+          color: #1E5096; }
+      .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form {
+        width: 80%;
+        margin: 3rem;
+        padding: 1rem;
+        background-color: #1E5096;
+        border: solid 3px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: all; }
+        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form label {
+          font-size: 1.5rem;
+          line-height: auto;
+          text-align: left;
           color: white; }
+        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form input {
+          font-size: 1.5rem; }
+        .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
+          background-color: whitesmoke;
+          color: black;
+          margin: 1rem;
+          transition: all 0.7s; }
+          .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
+            transform: scale(1.2);
+            background-color: #1E5096;
+            color: white; }
   @media (min-width: 768px) {
     .talkToUsGrid {
       grid-template-columns: repeat(2, 1fr);

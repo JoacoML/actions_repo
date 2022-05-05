@@ -14,17 +14,25 @@
 	.talkToUsContent{
 		margin-top: 11rem;
 		grid-area: talkToUsContent;
-	
-		.sectionTalkToUs{
-			.talkToUs__title--xl{
-				padding: 1rem 3rem;
-				animation-name: textAlpha;
-				animation-duration: 2s;
-				@include text($textXL, auto, center, $lightColor);
+		.talkToUs__title--xl{
+			padding: 1rem 3rem;
+			animation-name: textAlpha;
+			animation-duration: 2s;
+			@include text($textXL, auto, center, $lightColor);
+		}
+		.talkToUs__text--xl{
+			@include text(1.7rem, auto, center, $lightColor);
+			border-top: solid 2px $lightColor;
+			margin: 1rem;
+			padding: 1rem;
+			span{
+				color: map-get($map:$paleta,$key:'darkblue');
 			}
+		}
+		.sectionDiscord{
+			align-items: center;
 			.talkToUs__title--m{
 				@include text(1.7rem, auto, center, $lightColor);
-				border-top: solid 2px $lightColor;
 				margin: 1rem;
 				padding: 1rem;
 				span{
@@ -32,19 +40,19 @@
 				}
 			}
 			iframe{
+				margin: auto 10%;
 				width: 80%;
 			}
 		}
 		.sectionIdeas{
-
+			align-items: center;
 			.sectionIdeas__title--xl{
 				animation-name: textAlpha;
 				animation-duration: 2s;
-				@include text($textXL, auto, center, $lightColor);
+				@include text(2rem, auto, center, $lightColor);
 			}
 			.sectionIdeas__text--xl{
 				@include text(1.7rem, auto, center, $lightColor);
-				border-bottom: solid 2px $lightColor;
 				margin: 1rem;
 				padding: 1rem;
 				span{
@@ -59,11 +67,11 @@
 				background-color: map-get($map:$paleta,$key:'darkblue');
 				border: solid 3px white;
 				@include flexContent(column, space-around, all);
-				legend{
-					color: brown;
-				}
 				label{
 					@include text($textS, auto, left, $lightColor);
+				}
+				input{
+					font-size: 1.5rem;
 				}
 				.buttonForm{
 					@extend %button;
@@ -79,6 +87,7 @@
 				}
 			}
 			.cardTalkToUs{
+				margin: 2rem;
 				border-radius: 10px;
 				transition: all 0.7s;
 				@include text($textS, auto, center, $darkColor);
@@ -91,15 +100,18 @@
 				&:hover{
 					transform: scale(1.01);
 				}
+				@media (min-width: 991px){
+					margin-top: 5rem;
+				}
 			}
 		}
 		.advisorContact{
+			align-items: center;
 			.advisorContact__title--xl{
-				@include text($textXL, auto, center, $lightColor);
+				@include text(2rem, auto, center, $lightColor);
 			}
 			.advisorContact__text{
 				@include text(1.7rem, auto, center, $lightColor);
-				border-bottom: solid 2px $lightColor;
 				margin: 1rem;
 				padding: 1rem;
 				span{
@@ -113,11 +125,11 @@
 				background-color: map-get($map:$paleta,$key:'darkblue');
 				border: solid 3px white;
 				@include flexContent(column, space-around, all);
-				legend{
-					color: brown;
-				}
 				label{
 					@include text($textS, auto, left, $lightColor);
+				}
+				input{
+					font-size: 1.5rem;
 				}
 				.buttonForm{
 					@extend %button;
