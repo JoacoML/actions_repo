@@ -22,28 +22,33 @@
 						height: 80vh;
 						object-fit: cover;
 					}
-				}
-				.text-carousel{
-					@include text(4rem, "", center, $lightColor);
-					background-color: map-get($map:$paleta,$key:'black-shw');
-					margin-bottom: 5rem;
-					padding: 1rem;
-					border-radius: 20px;
-					animation-name: textAlpha;
-					animation-duration: 3s;
-					@keyframes textAlpha{
-						from{opacity: 0}
-						to{opacity: 1;}
-					}
-					span{
-						text-transform: uppercase;
-						padding: 1rem;
+					.carousel-caption{
+						.text-carousel{
+							@include text(4rem, "", center, $lightColor);
+							background-color: map-get($map:$paleta,$key:'black-shw');
+							margin-bottom: 5rem;
+							padding: 1rem;
+							border-radius: 20px;
+							animation-name: textAlpha;
+							animation-duration: 3s;
+							@keyframes textAlpha{
+								from{opacity: 0}
+								to{opacity: 1;}
+							}
+							span{
+								text-transform: uppercase;
+							}
+						}
+						@media (min-width: 768px){
+							right: 30%;
+							left: 30%;
+						}
 					}
 				}
 			}
 		}
 		.sectionAboutUs{
-			padding-top: 2rem;
+			padding-top: 1rem;
 			.aboutUs__text--xl{
 				margin: 1rem;
 				padding: 1rem;
@@ -61,10 +66,7 @@
 					margin: 1rem;
 				}
 				img{
-					width: 100%;
-					@media (min-width: 768px){
-						height: 40vh;
-					}
+					width: 90%;
 				}
 				.aboutUs__text{
 					@include text($textS, 2rem, left, $lightColor);
@@ -75,6 +77,9 @@
                     .aboutUs__title{
                         @include text($textM, auto, right, $darkColor);
                     }
+					img{
+						margin-left: 7%
+					}
                     .aboutUs__text{
                         @include text($textS, 2rem, right, $darkColor);
                     }

@@ -1,7 +1,7 @@
 	/*News*/
 .newsGrid{
 	width: 100vw;
-	background-image: url(../img/Fondo-4.jpg);
+	background-image: url(../img/home_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: grid;
@@ -86,7 +86,7 @@
 					margin: 0.5rem;
 				}
 				@media (min-width: 991px){
-					margin-top: 7rem;
+					margin-top: 3rem;
 				}
 			}
 		}
@@ -106,6 +106,9 @@
 			@include text($textM, auto, center, $lightColor);
 			padding: 1rem;
 		}
+	}
+	.projectsAdd{
+		justify-content: center;
 	}
 	@media (min-width: 768px){
 		grid-template-columns: repeat(2, 1fr);
