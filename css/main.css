@@ -19,11 +19,18 @@ html {
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
-  transition: all 0.7s; }
+  transition: all 0.7s;
+  width: 30%; }
   .projectsAdd a .buttonAdd:hover, .newsAdd a .buttonAdd:hover, .projectsGrid .projectsContent .projects__card .card .buttonCard:hover, .projectsGrid .donateAdd a .buttonAdd:hover, .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover, .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
     transform: scale(1.1);
     background-color: rgba(179, 208, 211, 0.398);
     color: white; }
+
+.projectsAdd, .newsAdd, .projectsGrid .donateAdd, .newsGrid .newsPodcast {
+  width: 80%;
+  margin: 2rem 15% 2rem 10%;
+  border: 3px solid #a29f9f;
+  border-radius: 50px; }
 
 .botonera {
   background-color: #FFFEFF;
@@ -32,7 +39,6 @@ html {
     max-width: 1140px;
     margin: auto;
     /* Logo Home */
-    /* border: solid 2px whitesmoke;*/
     /* Lista accesos */ }
     .botonera .botonera-desc .botonera__logo {
       width: 18rem; }
@@ -136,13 +142,9 @@ html {
 .projectsAdd {
   grid-area: projectsAdd;
   background-color: #1E5096;
-  margin: 2rem 15% 2rem 10%;
-  width: 80%;
-  border: 3px solid #a29f9f;
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: "";
+  justify-content: center;
   align-items: center; }
   .projectsAdd h3 {
     padding: 1rem;
@@ -165,7 +167,6 @@ html {
     align-items: center; }
     .projectsAdd a .buttonAdd {
       color: white;
-      width: 30%;
       background-color: #1E5096; }
       .projectsAdd a .buttonAdd:hover {
         background-color: #c20de6; }
@@ -173,10 +174,6 @@ html {
 .newsAdd {
   grid-area: newsAdd;
   background-color: #469CE3;
-  margin: 2rem 15% 2rem 10%;
-  border: 3px solid #a29f9f;
-  border-radius: 50px;
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,9 +198,8 @@ html {
     justify-content: center;
     align-items: center; }
     .newsAdd a .buttonAdd {
-      width: 30%;
       background-color: #469CE3;
-      color: white; }
+      color: #FFFEFF; }
       .newsAdd a .buttonAdd:hover {
         background-color: #e1b35d; }
 
@@ -283,10 +279,6 @@ html {
   .projectsGrid .donateAdd {
     background-color: #1E5096;
     grid-area: donateAdd;
-    margin: 2rem 15% 2rem 10%;
-    width: 80%;
-    border: 3px solid #a29f9f;
-    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -312,7 +304,6 @@ html {
       align-items: center; }
       .projectsGrid .donateAdd a .buttonAdd {
         color: white;
-        width: 30%;
         background-color: #1E5096; }
         .projectsGrid .donateAdd a .buttonAdd:hover {
           background-color: #0ea90e; }
@@ -429,11 +420,7 @@ html {
             margin-top: 1rem; } }
   .newsGrid .newsPodcast {
     grid-area: newsPodcast;
-    width: 80%;
     background-color: #006090;
-    margin: 2rem 15% 2rem 10%;
-    border: 3px solid #a29f9f;
-    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -484,6 +471,7 @@ html {
       margin: 1rem;
       padding: 1rem; }
       .donateGrid .donateContent .donate__text--xl span {
+        text-transform: uppercase;
         color: #1E5096; }
     .donateGrid .donateContent .sectionDonation .sectionDonation__form {
       border: solid 3px white;
@@ -506,9 +494,7 @@ html {
         .donateGrid .donateContent .sectionDonation .sectionDonation__form fieldset input {
           font-size: 1.5rem; }
       .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm {
-        width: 30%;
         background-color: whitesmoke;
-        color: black;
         transition: all 0.7s; }
         .donateGrid .donateContent .sectionDonation .sectionDonation__form .buttonForm:hover {
           background-color: #1E5096;
@@ -582,6 +568,7 @@ html {
       margin: 1rem;
       padding: 1rem; }
       .talkToUsGrid .talkToUsContent .talkToUs__text--xl span {
+        text-transform: uppercase;
         color: #1E5096; }
     .talkToUsGrid .talkToUsContent .sectionDiscord {
       align-items: center; }
@@ -634,9 +621,7 @@ html {
         .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form input {
           font-size: 1.5rem; }
         .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm {
-          width: 30%;
           background-color: whitesmoke;
-          color: black;
           transition: all 0.7s; }
           .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__form .buttonForm:hover {
             background-color: #1E5096;
@@ -710,9 +695,7 @@ html {
         .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form textarea {
           font-size: 1.5rem; }
         .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm {
-          width: 30%;
           background-color: whitesmoke;
-          color: black;
           transition: all 0.7s; }
           .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form .buttonForm:hover {
             background-color: #1E5096;

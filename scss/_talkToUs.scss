@@ -26,6 +26,7 @@
 			margin: 1rem;
 			padding: 1rem;
 			span{
+				text-transform: uppercase;
 				color: map-get($map:$paleta,$key:'darkblue');
 			}
 		}
@@ -76,9 +77,7 @@
 				}
 				.buttonForm{
 					@extend %button;
-					width: 30%;
 					background-color: whitesmoke;
-					color: $darkColor;
 					transition: all 0.7s;
 					&:hover{
 						background-color: map-get($map:$paleta,$key:'darkblue');
@@ -149,9 +148,7 @@
 				}
 				.buttonForm{
 					@extend %button;
-					width: 30%;
 					background-color: whitesmoke;
-					color: $darkColor;
 					transition: all 0.7s;
 					&:hover{
 						background-color: map-get($map:$paleta,$key:'darkblue');

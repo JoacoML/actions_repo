@@ -93,11 +93,8 @@
 	}
 	.newsPodcast{
 		grid-area: newsPodcast;
-		width: 80%;
+		@extend %add;
 		background-color: #006090;
-		margin: 2rem 15% 2rem 10%;
-		border: 3px solid rgb(162, 159, 159);
-		border-radius: 50px;
 		@include flexContent(column, center, center);
 		iframe{
 			object-fit: fill

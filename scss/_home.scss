@@ -78,7 +78,7 @@
                         @include text($textM, auto, right, $darkColor);
                     }
 					img{
-						margin-left: 7%
+						margin-left: 7%;
 					}
                     .aboutUs__text{
                         @include text($textS, 2rem, right, $darkColor);
@@ -98,12 +98,9 @@
 }
 .projectsAdd{
 	grid-area: projectsAdd;
+	@extend %add;
 	background-color: map-get($map:$paleta,$key:'darkblue');
-	margin: 2rem 15% 2rem 10%;
-	width: 80%;
-	border: 3px solid rgb(162, 159, 159);
-	border-radius: 50px;
-	@include flexContent(column, "", center);
+	@include flexContent(column, center, center);
 	h3{
 		padding: 1rem;
 		@include text($textM, auto, center, $lightColor);
@@ -119,7 +116,6 @@
 		.buttonAdd{
 			@extend %button;
 			color: $lightColor;
-			width: 30%;
 			background-color: map-get($map:$paleta,$key:'darkblue');
 			&:hover{
 				background-color: map-get($map:$paleta,$key:'fuxia');
@@ -129,11 +125,8 @@
 }
 .newsAdd{
 	grid-area: newsAdd;
+	@extend %add;
 	background-color: map-get($map:$paleta,$key:'blue');
-	margin: 2rem 15% 2rem 10%;
-	border: 3px solid rgb(162, 159, 159);;
-	border-radius: 50px;
-	width: 80%;
 	@include flexContent(column, center , center);
 	h3{
 		padding: 1rem;
@@ -149,9 +142,8 @@
 		@include flexContent(row, center, center);
 		.buttonAdd{
 			@extend %button;
-			width: 30%;
 			background-color: map-get($map:$paleta,$key:'blue');
-			color: white;
+			color: map-get($map:$paleta,$key:'white');
 			&:hover{
 				background-color: map-get($map:$paleta,$key:'orange');
 			}

@@ -68,10 +68,7 @@
 	.donateAdd{
 		background-color: map-get($map:$paleta,$key:'darkblue');
 		grid-area: donateAdd;
-		margin: 2rem 15% 2rem 10%;
-		width: 80%;
-		border: 3px solid rgb(162, 159, 159);
-		border-radius: 50px;
+		@extend %add;
 		@include flexContent(column, space-evenly, center);
 		h3{
 			padding: 1rem;
@@ -88,7 +85,6 @@
 			.buttonAdd{
 				@extend %button;
 				color: $lightColor;
-				width: 30%;
 				background-color: map-get($map:$paleta,$key:'darkblue');
 				&:hover{
 					background-color: map-get($map:$paleta,$key:'green');
