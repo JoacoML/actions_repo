@@ -32,7 +32,7 @@
 		.sectionDiscord{
 			align-items: center;
 			.talkToUs__title--m{
-				@include text(1.7rem, auto, center, $lightColor);
+				@include text(2rem, auto, center, $lightColor);
 				margin: 1rem;
 				padding: 1rem;
 				span{
@@ -49,10 +49,10 @@
 			.sectionIdeas__title--xl{
 				animation-name: textAlpha;
 				animation-duration: 2s;
-				@include text(2rem, auto, center, $lightColor);
+				@include text(3rem, auto, center, $lightColor);
 			}
 			.sectionIdeas__text--xl{
-				@include text(1.7rem, auto, center, $lightColor);
+				@include text(2rem, auto, center, $lightColor);
 				margin: 1rem;
 				padding: 1rem;
 				span{
@@ -116,15 +116,15 @@
 		.advisorContact{
 			align-items: center;
 			.advisorContact__title--xl{
-				@include text(2rem, auto, center, $lightColor);
-			}
-			.advisorContact__text{
-				@include text(1.7rem, auto, center, $lightColor);
-				margin: 1rem;
-				padding: 1rem;
+				@include text(3rem, auto, center, $lightColor);
 				span{
 					color: map-get($map:$paleta,$key:'darkblue');
 				}
+			}
+			.advisorContact__text{
+				@include text(2rem, auto, center, $lightColor);
+				margin: 1rem;
+				padding: 1rem;
 			}
 			.sectionAdvisor__form{
 				width: 80%;

@@ -420,13 +420,13 @@ html {
           margin: 0.5rem; }
         .newsGrid .newsContent .news__box .cardNews p {
           font-size: 1.7rem;
-          line-height: 2rem;
+          line-height: auto;
           text-align: center;
           color: #FFFEFF;
           margin: 0.5rem; }
         @media (min-width: 991px) {
           .newsGrid .newsContent .news__box .cardNews {
-            margin-top: 3rem; } }
+            margin-top: 1rem; } }
   .newsGrid .newsPodcast {
     grid-area: newsPodcast;
     width: 80%;
@@ -586,7 +586,7 @@ html {
     .talkToUsGrid .talkToUsContent .sectionDiscord {
       align-items: center; }
       .talkToUsGrid .talkToUsContent .sectionDiscord .talkToUs__title--m {
-        font-size: 1.7rem;
+        font-size: 2rem;
         line-height: auto;
         text-align: center;
         color: white;
@@ -602,12 +602,12 @@ html {
       .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__title--xl {
         animation-name: textAlpha;
         animation-duration: 2s;
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: auto;
         text-align: center;
         color: white; }
       .talkToUsGrid .talkToUsContent .sectionIdeas .sectionIdeas__text--xl {
-        font-size: 1.7rem;
+        font-size: 2rem;
         line-height: auto;
         text-align: center;
         color: white;
@@ -673,19 +673,19 @@ html {
     .talkToUsGrid .talkToUsContent .advisorContact {
       align-items: center; }
       .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl {
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: auto;
         text-align: center;
         color: white; }
+        .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__title--xl span {
+          color: #1E5096; }
       .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text {
-        font-size: 1.7rem;
+        font-size: 2rem;
         line-height: auto;
         text-align: center;
         color: white;
         margin: 1rem;
         padding: 1rem; }
-        .talkToUsGrid .talkToUsContent .advisorContact .advisorContact__text span {
-          color: #1E5096; }
       .talkToUsGrid .talkToUsContent .advisorContact .sectionAdvisor__form {
         width: 80%;
         margin: 3rem;

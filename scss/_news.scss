@@ -82,11 +82,11 @@
 					margin: 0.5rem;
 				}
 				p{
-					@include text(1.7rem, 2rem, center, map-get($map:$paleta,$key:'white'));
+					@include text(1.7rem, auto, center, map-get($map:$paleta,$key:'white'));
 					margin: 0.5rem;
 				}
 				@media (min-width: 991px){
-					margin-top: 3rem;
+					margin-top: 1rem;
 				}
 			}
 		}
