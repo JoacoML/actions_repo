@@ -73,7 +73,7 @@
 		border: 3px solid rgb(162, 159, 159);
 		border-radius: 50px;
 		@include flexContent(column, space-evenly, center);
-		h2{
+		h3{
 			padding: 1rem;
 			@include text($textM, auto, center, $lightColor);
 		}

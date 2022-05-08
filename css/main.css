@@ -144,7 +144,7 @@ html {
   flex-direction: column;
   justify-content: "";
   align-items: center; }
-  .projectsAdd h2 {
+  .projectsAdd h3 {
     padding: 1rem;
     font-size: 3rem;
     line-height: auto;
@@ -181,7 +181,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .newsAdd h2 {
+  .newsAdd h3 {
     padding: 1rem;
     font-size: 3rem;
     line-height: auto;
@@ -291,7 +291,7 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .projectsGrid .donateAdd h2 {
+    .projectsGrid .donateAdd h3 {
       padding: 1rem;
       font-size: 3rem;
       line-height: auto;
